@@ -127,8 +127,6 @@ class Auth extends BaseController
     {
         $this->session->destroy();
         
-        // Delete remember me cookie
-        delete_cookie('remember_me');
         
         return redirect()->to('/auth/login')->with('success', 'Logout berhasil!');
     }

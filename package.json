@@ -1,0 +1,26 @@
+{
+  "name": "kelompok-16_website-spk-beasiswa-metode-saw",
+  "version": "1.0.0",
+  "description": "## What is CodeIgniter?",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IrfanRomadhonWidodo/SPK_Beasiswa_Metode-Simple-Additive-Weighting.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IrfanRomadhonWidodo/SPK_Beasiswa_Metode-Simple-Additive-Weighting/issues"
+  },
+  "homepage": "https://github.com/IrfanRomadhonWidodo/SPK_Beasiswa_Metode-Simple-Additive-Weighting#readme",
+  "devDependencies": {
+    "tailwindcss": "^4.1.7"
+  }
+}
