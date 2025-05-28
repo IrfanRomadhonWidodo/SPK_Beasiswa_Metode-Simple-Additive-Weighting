@@ -4,308 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Welcome Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'purple-start': '#667eea',
+                        'purple-mid': '#764ba2',
+                        'purple-end': '#f093fb',
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            height: 100vh;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        .container {
-            display: flex;
-            width: 800px;
-            height: 500px;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-        }
-
-        .welcome-section {
-            flex: 1;
+        .bg-gradient-welcome {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            position: relative;
-            overflow: hidden;
         }
-
-        .welcome-section::before {
-            content: '';
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            top: -50px;
-            right: -50px;
-        }
-
-        .welcome-section::after {
-            content: '';
-            position: absolute;
-            width: 150px;
-            height: 150px;
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 50%;
-            bottom: -30px;
-            left: -30px;
-        }
-
-        .welcome-content {
-            z-index: 2;
-            position: relative;
-        }
-
-        .welcome-title {
-            font-size: 2.2rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .welcome-subtitle {
-            font-size: 0.95rem;
-            opacity: 0.9;
-            margin-bottom: 25px;
-        }
-
-        .website-url {
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        .form-section {
-            flex: 1;
-            background: white;
-            padding: 40px 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .form-header {
-            margin-bottom: 40px;
-        }
-
-        .greeting {
-            font-size: 1.1rem;
-            color: #666;
-            margin-bottom: 5px;
-        }
-
-        .form-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 25px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-label {
-            display: block;
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-
-        .form-input {
-            width: 100%;
-            padding: 12px 18px;
-            border: 2px solid #e5e5e5;
-            border-radius: 10px;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-            background: #fafafa;
-        }
-
-        .form-input:focus {
-            outline: none;
-            border-color: #667eea;
-            background: white;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-        }
-
-        .form-options {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 30px;
-        }
-
-        .checkbox-group {
-            display: flex;
-            align-items: center;
-        }
-
-        .checkbox-group input[type="checkbox"] {
-            margin-right: 8px;
-            transform: scale(1.1);
-        }
-
-        .checkbox-group label {
-            font-size: 0.9rem;
-            color: #666;
-        }
-
-        .forgot-link {
-            font-size: 0.9rem;
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .forgot-link:hover {
-            text-decoration: underline;
-        }
-
-        .submit-btn {
-            width: 100%;
-            padding: 12px;
+        .bg-gradient-main {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            border-radius: 10px;
-            font-size: 0.95rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin-bottom: 15px;
         }
-
-        .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
-        }
-
-        .register-link {
-            text-align: center;
-            font-size: 0.9rem;
-            color: #666;
-        }
-
-        .register-link a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .register-link a:hover {
-            text-decoration: underline;
-        }
-
-        .alert {
-            padding: 12px 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            font-size: 0.9rem;
-        }
-
-        .alert-success {
-            background: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
-        }
-
-        .alert-error {
-            background: #f8d7da;
-            color: #721c24;
-            border: 1px solid #f5c6cb;
-        }
-
-        .error-list {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .error-list li {
-            margin-bottom: 5px;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                width: 95%;
-                height: auto;
-                max-width: 400px;
-            }
-
-            .welcome-section {
-                padding: 40px 20px;
-                min-height: 200px;
-            }
-
-            .welcome-title {
-                font-size: 2rem;
-            }
-
-            .form-section {
-                padding: 40px 30px;
-            }
-
-            .website-url {
-                position: static;
-                transform: none;
-                margin-top: 20px;
-            }
+        .bg-gradient-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="welcome-section">
-            <div class="welcome-content">
-                <h1 class="welcome-title">Welcome Page</h1>
-                <p class="welcome-subtitle">Sign in to Your Account</p>
-            </div>
-            <div class="website-url">www.spkkipsaw.com</div>
+<body class="font-sans h-screen bg-gradient-main flex items-center justify-center overflow-hidden">
+    <div class="flex w-[800px] h-[500px] rounded-3xl overflow-hidden shadow-2xl max-md:flex-col max-md:w-[95%] max-md:h-auto max-md:max-w-sm">
+        <!-- Welcome Section -->
+        <div class="flex-1 bg-gradient-welcome flex flex-col justify-center items-center text-center text-white relative overflow-hidden max-md:p-10 max-md:min-h-[200px]">
+            <!-- Decorative circles -->
+            <div class="absolute w-[200px] h-[200px] bg-white bg-opacity-10 rounded-full -top-12 -right-12"></div>
+            <div class="absolute w-[150px] h-[150px] bg-white bg-opacity-10 rounded-full -bottom-8 -left-8"></div>
+            
+        <div class="relative z-10">
+            <img src="<?= base_url('assets/images/LogoSPK.png') ?>" alt="Logo SPK" class="w-40 mb-4 mx-auto drop-shadow-md">
+            <h1 class="text-4xl font-bold mb-3 drop-shadow-lg max-md:text-3xl">Beasiswa KIP</h1>
+            <p class="text-base opacity-90 mb-6">Sistem Pendukung Keputusan Method SAW</p>
         </div>
 
-        <div class="form-section">
-            <div class="form-header">
-                <p class="greeting">Hello !</p>
-                <h2 class="form-title">Selamat Datang </h2>
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-sm opacity-80 max-md:static max-md:transform-none max-md:mt-5">
+                www.spkkipsaw.com
+            </div>
+        </div>
+
+        <!-- Form Section -->
+        <div class="flex-1 bg-white px-10 py-10 flex flex-col justify-center max-md:px-8">
+            <div class="mb-10">
+                <p class="text-lg text-gray-600 mb-1">Hello !</p>
+                <h2 class="text-2xl font-bold text-gray-800 ">Selamat Datang</h2>
             </div>
 
+            <!-- Success Alert -->
             <?php if (session()->getFlashdata('success')): ?>
-                <div class="alert alert-success">
+                <div class="bg-green-100 border border-green-300 text-green-800 px-4 py-3 rounded-lg mb-5 text-sm">
                     <?= session()->getFlashdata('success') ?>
                 </div>
             <?php endif; ?>
 
+            <!-- Error Alert -->
             <?php if (session()->getFlashdata('error')): ?>
-                <div class="alert alert-error">
+                <div class="bg-red-100 border border-red-300 text-red-800 px-4 py-3 rounded-lg mb-5 text-sm">
                     <?= session()->getFlashdata('error') ?>
                 </div>
             <?php endif; ?>
 
+            <!-- Multiple Errors -->
             <?php if (session()->getFlashdata('errors')): ?>
-                <div class="alert alert-error">
-                    <ul class="error-list">
+                <div class="bg-red-100 border border-red-300 text-red-800 px-4 py-3 rounded-lg mb-5 text-sm">
+                    <ul class="list-none m-0 p-0">
                         <?php foreach (session()->getFlashdata('errors') as $error): ?>
-                            <li><?= $error ?></li>
+                            <li class="mb-1"><?= $error ?></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -314,30 +84,49 @@
             <form action="<?= base_url('auth/attempt-login') ?>" method="post">
                 <?= csrf_field() ?>
                 
-                <div class="form-group">
-                    <label class="form-label" for="email">Email Address</label>
-                    <input type="email" id="email" name="email" class="form-input" 
-                            value="<?= old('email') ?>" required>
+                <div class="mb-5">
+                    <label class="block text-sm text-gray-600 mb-2 font-medium" for="email">Email Address</label>
+                    <input type="email" 
+                           id="email" 
+                           name="email" 
+                           class="w-full px-5 py-3 border-2 border-gray-200 rounded-xl text-sm transition-all duration-300 bg-gray-50 
+                                  focus:outline-none focus:border-purple-start focus:bg-white focus:ring-4 focus:ring-purple-start focus:ring-opacity-10" 
+                           value="<?= old('email') ?>" 
+                           required>
                 </div>
 
-                <div class="form-group">
-                    <label class="form-label" for="password">Password</label>
-                    <input type="password" id="password" name="password" class="form-input" required>
+                <div class="mb-5">
+                    <label class="block text-sm text-gray-600 mb-2 font-medium" for="password">Password</label>
+                    <input type="password" 
+                           id="password" 
+                           name="password" 
+                           class="w-full px-5 py-3 border-2 border-gray-200 rounded-xl text-sm transition-all duration-300 bg-gray-50 
+                                  focus:outline-none focus:border-purple-start focus:bg-white focus:ring-4 focus:ring-purple-start focus:ring-opacity-10" 
+                           required>
                 </div>
 
-                <div class="form-options">
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="remember" name="remember" value="1">
-                        <label for="remember">Remember</label>
+                <div class="flex justify-between items-center mb-8">
+                    <div class="flex items-center">
+                        <input type="checkbox" 
+                               id="remember" 
+                               name="remember" 
+                               value="1" 
+                               class="mr-2 transform scale-110">
+                        <label for="remember" class="text-sm text-gray-600">Remember</label>
                     </div>
-                    <a href="#" class="forgot-link">Forgot Password ?</a>
+                    <a href="#" class="text-sm text-purple-start font-medium hover:underline">Forgot Password ?</a>
                 </div>
 
-                <button type="submit" class="submit-btn">SUBMIT</button>
+                <button type="submit" 
+                        class="w-full py-3 bg-gradient-btn text-white border-none rounded-xl text-sm font-semibold cursor-pointer 
+                               transition-all duration-300 mb-4 hover:-translate-y-1 hover:shadow-xl hover:shadow-purple-start/40">
+                    SUBMIT
+                </button>
             </form>
 
-            <div class="register-link">
-                Don't have an account? <a href="<?= base_url('auth/register') ?>">Create Account</a>
+            <div class="text-center text-sm text-gray-600">
+                Don't have an account? 
+                <a href="<?= base_url('auth/register') ?>" class="text-purple-start font-semibold hover:underline">Create Account</a>
             </div>
         </div>
     </div>
