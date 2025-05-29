@@ -52,9 +52,8 @@
         <!-- Form Section -->
         <div class="flex-1 bg-white px-12 py-10 flex flex-col justify-center overflow-y-auto max-md:px-8">
             <div class="mb-8">
-                <p class="text-lg text-gray-600 mb-1">Hello !</p>
-                <h2 class="text-2xl font-bold text-gray-800 mb-2">Create Account</h2>
-                <p class="text-purple-start text-sm font-medium">Register Your Account</p>
+                <p class="text-lg text-gray-600 mb-1">Hallo !</p>
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">Registrasi Akun Anda</h2>
             </div>
 
             <!-- Success Alert -->

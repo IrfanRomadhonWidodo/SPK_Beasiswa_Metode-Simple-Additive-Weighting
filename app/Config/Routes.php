@@ -16,6 +16,8 @@ $routes->group('auth', function($routes) {
     $routes->post('attempt-login', 'Auth::attemptLogin');
     $routes->post('attempt-register', 'Auth::attemptRegister');
     $routes->get('logout', 'Auth::logout');
+    $routes->post('logout', 'Auth::logout');
+
 });
 
 // Dashboard (protected)

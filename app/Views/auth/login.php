@@ -52,7 +52,7 @@
         <!-- Form Section -->
         <div class="flex-1 bg-white px-10 py-10 flex flex-col justify-center max-md:px-8">
             <div class="mb-10">
-                <p class="text-lg text-gray-600 mb-1">Hello !</p>
+                <p class="text-lg text-gray-600 mb-1">Hallo !</p>
                 <h2 class="text-2xl font-bold text-gray-800 ">Selamat Datang</h2>
             </div>
 
