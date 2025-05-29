@@ -195,127 +195,208 @@
     </div>
 
     <script>
-        let table;
-        let isEdit = false;
+    let table;
+    let isEdit = false;
 
-        $(document).ready(function() {
-            // Initialize DataTable
-            table = $('#subKriteriaTable').DataTable({
-                processing: true,
-                serverSide: true,
-                ajax: {
-                    url: '<?= base_url('subkriteria/getData') ?>',
-                    type: 'POST',
-                    dataType: 'json'
-                },
-                columns: [
-                    { data: 'no', orderable: false, searchable: false },
-                    { data: 'kode_kriteria' },
-                    { data: 'nama_kriteria' },
-                    { data: 'sub_variabel' },
-                    { 
-                        data: 'bobot',
-                        render: function(data) {
-                            return `<span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">${data}</span>`;
-                        }
-                    },
-                    { 
-                        data: 'id',
-                        render: function(data) {
-                            return `
-                                <div class="flex gap-2">
-                                    <button onclick="editSubKriteria(${data})" class="bg-blue-500 text-white px-2 py-1 rounded text-xs hover:bg-blue-600 transition-colors">
-                                        Edit
-                                    </button>
-                                    <button onclick="deleteSubKriteria(${data})" class="bg-red-500 text-white px-2 py-1 rounded text-xs hover:bg-red-600 transition-colors">
-                                        Hapus
-                                    </button>
-                                </div>
-                            `;
-                        },
-                        orderable: false,
-                        searchable: false
+    $(document).ready(function() {
+        // Inisialisasi DataTable dengan warna baris berdasarkan kode_kriteria
+        table = $('#subKriteriaTable').DataTable({
+            processing: true,
+            serverSide: true,
+            ajax: {
+                url: '<?= base_url('subkriteria/getData') ?>',
+                type: 'POST',
+                dataType: 'json'
+            },
+            columns: [
+                { data: 'no', orderable: false, searchable: false },
+                { data: 'kode_kriteria' },
+                { data: 'nama_kriteria' },
+                { data: 'sub_variabel' },
+                {
+                    data: 'bobot',
+                    render: function(data) {
+                        return `<span class="px-2 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">${data}</span>`;
                     }
-                ],
-                language: {
-                    url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/id.json'
+                },
+                {
+                    data: 'id',
+                    render: function(data) {
+                        return `
+                            <div class="flex gap-2">
+                                <button onclick="editSubKriteria(${data})" class="bg-blue-500 text-white px-2 py-1 rounded text-xs hover:bg-blue-600 transition-colors">Edit</button>
+                                <button onclick="deleteSubKriteria(${data})" class="bg-red-500 text-white px-2 py-1 rounded text-xs hover:bg-red-600 transition-colors">Hapus</button>
+                            </div>
+                        `;
+                    },
+                    orderable: false,
+                    searchable: false
                 }
-            });
+            ],
+            rowCallback: function(row, data) {
+                if (!window.kriteriaColors) window.kriteriaColors = {};
 
-            // Form submission
-            $('#subKriteriaForm').on('submit', function(e) {
-                e.preventDefault();
-                saveSubKriteria();
-            });
+                if (!window.kriteriaColors[data.kode_kriteria]) {
+                    const warnaList = [
+                        '#fee2e2', '#d1fae5', '#fef9c3', '#dbeafe', '#ede9fe',
+                        '#fce7f3', '#e0f2fe', '#f0fdf4', '#fff7ed', '#f3f4f6'
+                    ];
 
-            // Load kriteria options
-            loadKriteriaOptions();
+                    // Hash sederhana: jumlah charCode dari kode_kriteria
+                    let hash = 0;
+                    for (let i = 0; i < data.kode_kriteria.length; i++) {
+                        hash += data.kode_kriteria.charCodeAt(i);
+                    }
+
+                    const colorIndex = hash % warnaList.length;
+                    window.kriteriaColors[data.kode_kriteria] = warnaList[colorIndex];
+                }
+
+
+                $(row).css('background-color', window.kriteriaColors[data.kode_kriteria]);
+            },
+            language: {
+                url: '//cdn.datatables.net/plug-ins/1.13.4/i18n/id.json'
+            }
         });
 
-        function loadKriteriaOptions() {
-            $.ajax({
-                url: '<?= base_url('subkriteria/getKriteriaOptions') ?>',
-                type: 'GET',
-                success: function(response) {
-                    if (response.success) {
-                        let options = '<option value="">Pilih Kriteria</option>';
-                        response.data.forEach(function(kriteria) {
-                            options += `<option value="${kriteria.kode_kriteria}">${kriteria.kode_kriteria} - ${kriteria.variabel}</option>`;
+        // Handle submit form
+        $('#subKriteriaForm').on('submit', function(e) {
+            e.preventDefault();
+            saveSubKriteria();
+        });
+
+        // Load opsi kriteria saat dokumen siap
+        loadKriteriaOptions();
+    });
+
+    function loadKriteriaOptions() {
+        $.ajax({
+            url: '<?= base_url('subkriteria/getKriteriaOptions') ?>',
+            type: 'GET',
+            success: function(response) {
+                if (response.success) {
+                    let options = '<option value="">Pilih Kriteria</option>';
+                    response.data.forEach(function(kriteria) {
+                        options += `<option value="${kriteria.kode_kriteria}">${kriteria.kode_kriteria} - ${kriteria.variabel}</option>`;
+                    });
+                    $('#kode_kriteria').html(options);
+                }
+            }
+        });
+    }
+
+    function openAddModal() {
+        isEdit = false;
+        $('#modalTitle').text('Tambah Sub Kriteria');
+        $('#submitBtn').text('Simpan');
+        $('#subKriteriaForm')[0].reset();
+        $('#subKriteriaId').val('');
+        clearErrors();
+        $('#subKriteriaModal').removeClass('hidden').addClass('flex');
+    }
+
+    function closeModal() {
+        $('#subKriteriaModal').removeClass('flex').addClass('hidden');
+        clearErrors();
+    }
+
+    function clearErrors() {
+        $('.text-red-500').addClass('hidden').text('');
+        $('.border-red-500').removeClass('border-red-500').addClass('border-gray-300');
+    }
+
+    function saveSubKriteria() {
+        clearErrors();
+
+        const formData = new FormData($('#subKriteriaForm')[0]);
+        const url = isEdit ?
+            `<?= base_url('subkriteria/update/') ?>${$('#subKriteriaId').val()}` :
+            '<?= base_url('subkriteria/store') ?>';
+
+        $.ajax({
+            url: url,
+            type: 'POST',
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function(response) {
+                if (response.success) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Berhasil!',
+                        text: response.message,
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                    closeModal();
+                    table.ajax.reload();
+                } else {
+                    if (response.errors) {
+                        displayErrors(response.errors);
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Gagal!',
+                            text: response.message
                         });
-                        $('#kode_kriteria').html(options);
                     }
                 }
-            });
-        }
+            },
+            error: function() {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error!',
+                    text: 'Terjadi kesalahan sistem'
+                });
+            }
+        });
+    }
 
-        function openAddModal() {
-            isEdit = false;
-            $('#modalTitle').text('Tambah Sub Kriteria');
-            $('#submitBtn').text('Simpan');
-            $('#subKriteriaForm')[0].reset();
-            $('#subKriteriaId').val('');
-            clearErrors();
-            $('#subKriteriaModal').removeClass('hidden').addClass('flex');
-        }
+    function editSubKriteria(id) {
+        $.ajax({
+            url: `<?= base_url('subkriteria/show/') ?>${id}`,
+            type: 'GET',
+            success: function(response) {
+                if (response.success) {
+                    isEdit = true;
+                    $('#modalTitle').text('Edit Sub Kriteria');
+                    $('#submitBtn').text('Update');
+                    $('#subKriteriaId').val(response.data.id);
+                    $('#kode_kriteria').val(response.data.kode_kriteria);
+                    $('#sub_variabel').val(response.data.sub_variabel);
+                    $('#bobot').val(response.data.bobot);
+                    $('#subKriteriaModal').removeClass('hidden').addClass('flex');
+                }
+            }
+        });
+    }
 
-        function closeModal() {
-            $('#subKriteriaModal').removeClass('flex').addClass('hidden');
-            clearErrors();
-        }
-
-        function clearErrors() {
-            $('.text-red-500').addClass('hidden').text('');
-            $('.border-red-500').removeClass('border-red-500').addClass('border-gray-300');
-        }
-
-        function saveSubKriteria() {
-            clearErrors();
-            
-            const formData = new FormData($('#subKriteriaForm')[0]);
-            const url = isEdit ? 
-                `<?= base_url('subkriteria/update/') ?>${$('#subKriteriaId').val()}` : 
-                '<?= base_url('subkriteria/store') ?>';
-
-            $.ajax({
-                url: url,
-                type: 'POST',
-                data: formData,
-                processData: false,
-                contentType: false,
-                success: function(response) {
-                    if (response.success) {
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'Berhasil!',
-                            text: response.message,
-                            showConfirmButton: false,
-                            timer: 1500
-                        });
-                        closeModal();
-                        table.ajax.reload();
-                    } else {
-                        if (response.errors) {
-                            displayErrors(response.errors);
+    function deleteSubKriteria(id) {
+        Swal.fire({
+            title: 'Konfirmasi Hapus',
+            text: 'Apakah Anda yakin ingin menghapus sub kriteria ini?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Ya, Hapus!',
+            cancelButtonText: 'Batal'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    url: `<?= base_url('subkriteria/delete/') ?>${id}`,
+                    type: 'DELETE',
+                    success: function(response) {
+                        if (response.success) {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Terhapus!',
+                                text: response.message,
+                                showConfirmButton: false,
+                                timer: 1500
+                            });
+                            table.ajax.reload();
                         } else {
                             Swal.fire({
                                 icon: 'error',
@@ -324,80 +405,18 @@
                             });
                         }
                     }
-                },
-                error: function() {
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Error!',
-                        text: 'Terjadi kesalahan sistem'
-                    });
-                }
-            });
-        }
-
-        function editSubKriteria(id) {
-            $.ajax({
-                url: `<?= base_url('subkriteria/show/') ?>${id}`,
-                type: 'GET',
-                success: function(response) {
-                    if (response.success) {
-                        isEdit = true;
-                        $('#modalTitle').text('Edit Sub Kriteria');
-                        $('#submitBtn').text('Update');
-                        $('#subKriteriaId').val(response.data.id);
-                        $('#kode_kriteria').val(response.data.kode_kriteria);
-                        $('#sub_variabel').val(response.data.sub_variabel);
-                        $('#bobot').val(response.data.bobot);
-                        $('#subKriteriaModal').removeClass('hidden').addClass('flex');
-                    }
-                }
-            });
-        }
-
-        function deleteSubKriteria(id) {
-            Swal.fire({
-                title: 'Konfirmasi Hapus',
-                text: 'Apakah Anda yakin ingin menghapus sub kriteria ini?',
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#d33',
-                cancelButtonColor: '#3085d6',
-                confirmButtonText: 'Ya, Hapus!',
-                cancelButtonText: 'Batal'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    $.ajax({
-                        url: `<?= base_url('subkriteria/delete/') ?>${id}`,
-                        type: 'DELETE',
-                        success: function(response) {
-                            if (response.success) {
-                                Swal.fire({
-                                    icon: 'success',
-                                    title: 'Terhapus!',
-                                    text: response.message,
-                                    showConfirmButton: false,
-                                    timer: 1500
-                                });
-                                table.ajax.reload();
-                            } else {
-                                Swal.fire({
-                                    icon: 'error',
-                                    title: 'Gagal!',
-                                    text: response.message
-                                });
-                            }
-                        }
-                    });
-                }
-            });
-        }
-
-        function displayErrors(errors) {
-            for (let field in errors) {
-                $(`#error_${field}`).removeClass('hidden').text(errors[field]);
-                $(`#${field}`).removeClass('border-gray-300').addClass('border-red-500');
+                });
             }
+        });
+    }
+
+    function displayErrors(errors) {
+        for (let field in errors) {
+            $(`#error_${field}`).removeClass('hidden').text(errors[field]);
+            $(`#${field}`).removeClass('border-gray-300').addClass('border-red-500');
         }
-    </script>
+    }
+</script>
+
 </body>
 </html>
