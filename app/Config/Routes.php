@@ -36,4 +36,14 @@ $routes->get('dashboard', 'Auth::dashboard');
     $routes->get('show/(:num)', 'KriteriaController::show/$1');
     $routes->post('update/(:num)', 'KriteriaController::update/$1');
     $routes->delete('delete/(:num)', 'KriteriaController::delete/$1');
-});
+    });
+
+    $routes->group('subkriteria', function($routes) {
+        $routes->get('/', 'SubKriteria::index');
+        $routes->post('getData', 'SubKriteria::getData');
+        $routes->get('getKriteriaOptions', 'SubKriteria::getKriteriaOptions');
+        $routes->post('store', 'SubKriteria::store');
+        $routes->get('show/(:num)', 'SubKriteria::show/$1');
+        $routes->post('update/(:num)', 'SubKriteria::update/$1');
+        $routes->delete('delete/(:num)', 'SubKriteria::delete/$1');
+    });
