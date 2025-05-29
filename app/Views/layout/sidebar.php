@@ -101,7 +101,7 @@
             </a>
                 <!-- Collapse Button -->
 
-<form action="<?= base_url('/logout') ?>" method="POST" class="inline">
+<form action="<?= base_url('auth/logout') ?>" method="POST" class="inline">
     <?= csrf_field() ?>
     <button type="submit" class="flex items-center gap-2 mt-6 py-3 px-4 rounded-md bg-purple-800 bg-opacity-50 hover:bg-opacity-70 transition-all mb-4 w-fit shadow-sm hover:shadow-md">
         <!-- Arrow Icon yang diperbaiki -->

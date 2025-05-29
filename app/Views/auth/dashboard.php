@@ -42,15 +42,21 @@
             border: 1px solid #e5e7eb;
         }
         .dropdown-content a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem; /* space-x-2 */
+            padding: 0.5rem 0.75rem; /* py-2 px-3 */
+            font-size: 0.875rem; /* text-sm */
             color: #374151;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
+            text-align: left;
+            width: 100%;
             transition: background-color 0.2s;
+            text-decoration: none;
         }
         .dropdown-content a:hover {
-            background-color: #f3f4f6;
+            background-color: #f9fafb; /* hover:bg-gray-50 */
         }
+
         .dropdown:hover .dropdown-content {
             display: block;
         }
