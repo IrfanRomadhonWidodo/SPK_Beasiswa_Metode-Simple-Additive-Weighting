@@ -1,3 +1,37 @@
+<style>
+.dropdown-content {
+    animation: fadeInDown 0.2s ease-out;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-out;
+}
+
+.dropdown.active .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.dropdown.active .dropdown-chevron {
+    transform: rotate(180deg);
+}
+
+.dropdown-chevron {
+    transition: transform 0.2s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+
 <!-- Top Navigation -->
 <nav class="bg-white shadow-sm border-b border-gray-200 px-4 py-3">
     <div class="flex items-center justify-between">
@@ -11,7 +45,7 @@
         <!-- User Info -->
         <div class="flex items-center ml-auto">
             <div class="dropdown relative">
-                <div class="flex items-center space-x-2 cursor-pointer hover:bg-gray-50 rounded-lg p-1.5 transition-colors">
+                <div class="dropdown-trigger flex items-center space-x-2 cursor-pointer hover:bg-gray-50 rounded-lg p-1.5 transition-colors">
                     <div class="text-right hidden sm:block">
                         <div class="text-sm font-medium text-gray-800"><?= esc($user['full_name']) ?></div>
                         <div class="text-xs text-gray-500"><?= esc($user['email']) ?></div>
@@ -23,13 +57,13 @@
                         </svg>
                     </div>
                     <!-- Chevron Down Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 text-gray-400 transition-transform dropdown-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 text-gray-400 dropdown-chevron" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
                 </div>
                 
                 <!-- Dropdown Menu -->
-                <div class="dropdown-content absolute right-0 top-full mt-1 w-44 bg-white rounded-md shadow-lg border border-gray-200 py-1 z-50 hidden">
+                <div class="dropdown-content absolute right-0 top-full mt-1 w-44 bg-white rounded-md shadow-lg border border-gray-200 py-1 z-50">
                     <!-- User Info in Dropdown (mobile) -->
                     <div class="px-3 py-2 border-b border-gray-100 sm:hidden">
                         <div class="text-sm font-medium text-gray-800"><?= esc($user['full_name']) ?></div>
@@ -62,61 +96,49 @@
     </div>
 </nav>
 
-<style>
-.dropdown-content {
-    animation: fadeInDown 0.2s ease-out;
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Remove hover behavior - only use JavaScript */
-.dropdown .dropdown-content {
-    display: none;
-}
-
-.dropdown.active .dropdown-content {
-    display: block;
-}
-
-.dropdown.active .dropdown-chevron {
-    transform: rotate(180deg);
-}
-</style>
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const dropdown = document.querySelector('.dropdown');
+    const dropdownTrigger = document.querySelector('.dropdown-trigger');
     const dropdownContent = document.querySelector('.dropdown-content');
-    const chevron = document.querySelector('.dropdown-chevron');
+    let isOpen = false;
+    let clickTimeout;
     
     if (dropdown && dropdownContent) {
-        // Toggle dropdown on click
-        dropdown.addEventListener('click', function(e) {
+        // Toggle dropdown on click dengan debounce
+        dropdownTrigger.addEventListener('click', function(e) {
+            e.preventDefault();
             e.stopPropagation();
-            dropdown.classList.toggle('active');
+            
+            // Clear any existing timeout
+            clearTimeout(clickTimeout);
+            
+            // Add small delay to prevent multiple rapid clicks
+            clickTimeout = setTimeout(() => {
+                isOpen = !isOpen;
+                dropdown.classList.toggle('active', isOpen);
+            }, 100);
         });
         
         // Close dropdown when clicking outside
         document.addEventListener('click', function(e) {
             if (!dropdown.contains(e.target)) {
+                isOpen = false;
                 dropdown.classList.remove('active');
             }
         });
         
         // Close dropdown when pressing Escape key
         document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
+            if (e.key === 'Escape' && isOpen) {
+                isOpen = false;
                 dropdown.classList.remove('active');
             }
+        });
+        
+        // Prevent dropdown from closing when clicking inside dropdown content
+        dropdownContent.addEventListener('click', function(e) {
+            e.stopPropagation();
         });
     }
 });

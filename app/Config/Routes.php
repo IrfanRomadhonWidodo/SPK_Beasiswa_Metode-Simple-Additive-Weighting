@@ -17,10 +17,17 @@ $routes->group('auth', function($routes) {
     $routes->post('attempt-register', 'Auth::attemptRegister');
     $routes->get('logout', 'Auth::logout');
     $routes->post('logout', 'Auth::logout');
-
 });
 
 // Dashboard (protected)
 $routes->get('dashboard', 'Auth::dashboard');
 
-// Add other routes here...
+
+
+    $routes->get('/profile', 'Profile::index');
+    $routes->post('/profile/update', 'Profile::update');
+    $routes->post('/profile/change-password', 'Profile::changePassword');
+
+//     $routes->get('profile', 'Profile::index');
+// $routes->post('profile/update', 'Profile::update');
+// $routes->post('profile/change-password', 'Profile::changePassword');

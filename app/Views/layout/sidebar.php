@@ -84,34 +84,26 @@
         <div class="px-6 mt-6">
             <h3 class="text-xs font-semibold text-purple-200 uppercase tracking-wider mb-3">Master User</h3>
             
-            <a href="#" class="flex items-center space-x-3 py-3 px-4 rounded-lg hover:bg-purple-600 hover:bg-opacity-30 transition-colors mb-1">
-                <!-- User Icon -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-                <span class="text-sm">Data User</span>
-            </a>
-            
-            <a href="#" class="flex items-center space-x-3 py-3 px-4 rounded-lg hover:bg-purple-600 hover:bg-opacity-30 transition-colors">
+            <a href="<?= base_url('profile') ?>" class="flex items-center space-x-3 py-3 px-4 rounded-lg hover:bg-purple-600 hover:bg-opacity-30 transition-colors">
                 <!-- Users Icon -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
                 <span class="text-sm">Data Profile</span>
             </a>
-                <!-- Collapse Button -->
-
-<form action="<?= base_url('auth/logout') ?>" method="POST" class="inline">
-    <?= csrf_field() ?>
-    <button type="submit" class="flex items-center gap-2 mt-6 py-3 px-4 rounded-md bg-purple-800 bg-opacity-50 hover:bg-opacity-70 transition-all mb-4 w-fit shadow-sm hover:shadow-md">
-        <!-- Arrow Icon yang diperbaiki -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="m12 19-7-7 7-7"/>
-            <path d="M19 12H5"/>
-        </svg>
-        <span class="text-sm text-white font-medium">Logout</span>
-    </button>
-</form>
+            
+        <!-- Collapse Button -->
+        <form action="<?= base_url('auth/logout') ?>" method="POST" class="inline">
+            <?= csrf_field() ?>
+            <button type="submit" class="flex items-center gap-2 mt-6 py-3 px-4 rounded-md bg-purple-800 bg-opacity-50 hover:bg-opacity-70 transition-all mb-4 w-fit shadow-sm hover:shadow-md">
+                <!-- Arrow Icon yang diperbaiki -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m12 19-7-7 7-7"/>
+                    <path d="M19 12H5"/>
+                </svg>
+                <span class="text-sm text-white font-medium">Logout</span>
+            </button>
+        </form>
         </div>
     </nav>
 </div>
