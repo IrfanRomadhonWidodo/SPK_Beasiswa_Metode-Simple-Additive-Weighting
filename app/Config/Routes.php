@@ -28,6 +28,12 @@ $routes->get('dashboard', 'Auth::dashboard');
     $routes->post('/profile/update', 'Profile::update');
     $routes->post('/profile/change-password', 'Profile::changePassword');
 
-//     $routes->get('profile', 'Profile::index');
-// $routes->post('profile/update', 'Profile::update');
-// $routes->post('profile/change-password', 'Profile::changePassword');
+
+    $routes->group('kriteria', function($routes) {
+    $routes->get('/', 'KriteriaController::index');
+    $routes->post('getData', 'KriteriaController::getData');
+    $routes->post('store', 'KriteriaController::store');
+    $routes->get('show/(:num)', 'KriteriaController::show/$1');
+    $routes->post('update/(:num)', 'KriteriaController::update/$1');
+    $routes->delete('delete/(:num)', 'KriteriaController::delete/$1');
+});

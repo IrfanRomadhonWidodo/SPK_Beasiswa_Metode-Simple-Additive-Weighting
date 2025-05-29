@@ -103,7 +103,7 @@
                     <div class="bg-white rounded-lg shadow-md p-6">
                         <div class="text-center">
                             <!-- Profile Avatar -->
-                            <div class="mx-auto w-32 h-32 bg-gradient-main rounded-full flex items-center justify-center mb-4">
+                            <div class="mx-auto w-32 h-32 bg-gradient-to-br from-gray-800 to-gray-600 rounded-full flex items-center justify-center mb-4">
                                 <span class="text-4xl font-bold text-white">
                                     <?= strtoupper(substr($user['full_name'] ?? $user['username'], 0, 1)) ?>
                                 </span>
