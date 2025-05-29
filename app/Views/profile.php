@@ -61,8 +61,8 @@
         }
         .form-input:focus {
             outline: none;
-            ring: 2px;
-            ring-color: #667eea;
+            /* ring: 2px;
+            ring-color: #667eea; */
             border-color: #667eea;
         }
     </style>
