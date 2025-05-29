@@ -237,16 +237,16 @@
                 if (!window.kriteriaColors) {
                     window.kriteriaColors = {};
                     window.availableColors = [
-                        '#fee2e2', // merah pastel
-                        '#d1fae5', // hijau pastel
-                        '#fef9c3', // kuning pastel
+                        '#f0fdf4', // merah pastel
+                        '#e9d5ff', // hijau pastel
+                        '#bae6fd', // kuning pastel
                         '#dbeafe', // biru pastel
                         '#ede9fe', // ungu pastel
                         '#fce7f3', // pink terang
                         '#e0f2fe', // biru muda
-                        '#f0fdf4', // hijau pucat
-                        '#e9d5ff', // ungu terang
-                        '#bae6fd'  // ungu muda
+                        '#fee2e2', // hijau pucat
+                        '#d1fae5',
+                        '#fff3cd'  
                     ];
                 }
 
