@@ -17,7 +17,7 @@
     <!-- Navigation -->
     <nav class="mt-6">
         <div class="px-6">
-            <a href="#" class="flex items-center space-x-3 py-3 px-4 rounded-lg hover:bg-purple-600 hover:bg-opacity-30 transition-colors mb-1">
+            <a href="<?= base_url('dashboard') ?>" class="flex items-center space-x-3 py-3 px-4 rounded-lg hover:bg-purple-600 hover:bg-opacity-30 transition-colors mb-1">
                 <!-- Chart Bar Icon -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3v18h18" />
@@ -89,7 +89,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
-                <span class="text-sm">Data Profile</span>
+                <span class="text-sm">Profile Settings</span>
             </a>
             
         <!-- Collapse Button -->

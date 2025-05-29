@@ -367,3 +367,426 @@ DEBUG - 2025-05-29 06:48:12 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-05-29 06:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-05-29 06:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-05-29 06:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 06:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-29 07:09:26 --> mysqli_sql_exception: Unknown column 'profile_picture' in 'field list' in D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `id`, `u...', 0)
+#1 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `u...')
+#2 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `u...')
+#3 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `u...', Array, false)
+#4 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\BaseModel.php(613): CodeIgniter\Model->doFind(true, '5')
+#6 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Models\ProfileModel.php(83): CodeIgniter\BaseModel->find('5')
+#7 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Controllers\Profile.php(26): App\Models\ProfileModel->getProfile('5')
+#8 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(933): App\Controllers\Profile->index()
+#9 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#10 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\rewrite.php(44): require_once('D:\\Laragon\\lara...')
+#15 {main}
+CRITICAL - 2025-05-29 07:09:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'profile_picture' in 'field list'
+[Method: GET, Route: profile]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = :users.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(613): CodeIgniter\Model->doFind(true, '5')
+ 4 APPPATH\Models\ProfileModel.php(83): CodeIgniter\BaseModel->find('5')
+ 5 APPPATH\Controllers\Profile.php(26): App\Models\ProfileModel->getProfile('5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-29 07:09:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'profile_picture' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = :users.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(613): CodeIgniter\Model->doFind(true, '5')
+ 6 APPPATH\Models\ProfileModel.php(83): CodeIgniter\BaseModel->find('5')
+ 7 APPPATH\Controllers\Profile.php(26): App\Models\ProfileModel->getProfile('5')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-29 07:09:26 --> [Caused by] mysqli_sql_exception: Unknown column 'profile_picture' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(613): CodeIgniter\Model->doFind(true, '5')
+ 7 APPPATH\Models\ProfileModel.php(83): CodeIgniter\BaseModel->find('5')
+ 8 APPPATH\Controllers\Profile.php(26): App\Models\ProfileModel->getProfile('5')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+DEBUG - 2025-05-29 07:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-29 07:09:26 --> mysqli_sql_exception: Unknown column 'profile_picture' in 'field list' in D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `id`, `u...', 0)
+#1 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `u...')
+#2 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `u...')
+#3 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `u...', Array, false)
+#4 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\BaseModel.php(613): CodeIgniter\Model->doFind(true, '5')
+#6 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Models\ProfileModel.php(83): CodeIgniter\BaseModel->find('5')
+#7 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Controllers\Profile.php(26): App\Models\ProfileModel->getProfile('5')
+#8 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(933): App\Controllers\Profile->index()
+#9 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#10 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\rewrite.php(44): require_once('D:\\Laragon\\lara...')
+#15 {main}
+CRITICAL - 2025-05-29 07:09:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'profile_picture' in 'field list'
+[Method: GET, Route: profile]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = :users.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(613): CodeIgniter\Model->doFind(true, '5')
+ 4 APPPATH\Models\ProfileModel.php(83): CodeIgniter\BaseModel->find('5')
+ 5 APPPATH\Controllers\Profile.php(26): App\Models\ProfileModel->getProfile('5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-29 07:09:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'profile_picture' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = :users.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(613): CodeIgniter\Model->doFind(true, '5')
+ 6 APPPATH\Models\ProfileModel.php(83): CodeIgniter\BaseModel->find('5')
+ 7 APPPATH\Controllers\Profile.php(26): App\Models\ProfileModel->getProfile('5')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-29 07:09:26 --> [Caused by] mysqli_sql_exception: Unknown column 'profile_picture' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(613): CodeIgniter\Model->doFind(true, '5')
+ 7 APPPATH\Models\ProfileModel.php(83): CodeIgniter\BaseModel->find('5')
+ 8 APPPATH\Controllers\Profile.php(26): App\Models\ProfileModel->getProfile('5')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+DEBUG - 2025-05-29 07:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-29 07:13:39 --> mysqli_sql_exception: Unknown column 'profile_picture' in 'field list' in D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `id`, `u...', 0)
+#1 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `u...')
+#2 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `u...')
+#3 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `u...', Array, false)
+#4 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\BaseModel.php(613): CodeIgniter\Model->doFind(true, '5')
+#6 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Models\ProfileModel.php(83): CodeIgniter\BaseModel->find('5')
+#7 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Controllers\Profile.php(26): App\Models\ProfileModel->getProfile('5')
+#8 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(933): App\Controllers\Profile->index()
+#9 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#10 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\rewrite.php(44): require_once('D:\\Laragon\\lara...')
+#15 {main}
+CRITICAL - 2025-05-29 07:13:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'profile_picture' in 'field list'
+[Method: GET, Route: profile]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = :users.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(613): CodeIgniter\Model->doFind(true, '5')
+ 4 APPPATH\Models\ProfileModel.php(83): CodeIgniter\BaseModel->find('5')
+ 5 APPPATH\Controllers\Profile.php(26): App\Models\ProfileModel->getProfile('5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-29 07:13:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'profile_picture' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = :users.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(613): CodeIgniter\Model->doFind(true, '5')
+ 6 APPPATH\Models\ProfileModel.php(83): CodeIgniter\BaseModel->find('5')
+ 7 APPPATH\Controllers\Profile.php(26): App\Models\ProfileModel->getProfile('5')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-29 07:13:39 --> [Caused by] mysqli_sql_exception: Unknown column 'profile_picture' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(613): CodeIgniter\Model->doFind(true, '5')
+ 7 APPPATH\Models\ProfileModel.php(83): CodeIgniter\BaseModel->find('5')
+ 8 APPPATH\Controllers\Profile.php(26): App\Models\ProfileModel->getProfile('5')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+DEBUG - 2025-05-29 07:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:13:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-29 07:13:43 --> mysqli_sql_exception: Unknown column 'profile_picture' in 'field list' in D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `id`, `u...', 0)
+#1 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `u...')
+#2 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `u...')
+#3 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `u...', Array, false)
+#4 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\BaseModel.php(613): CodeIgniter\Model->doFind(true, '5')
+#6 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Models\ProfileModel.php(83): CodeIgniter\BaseModel->find('5')
+#7 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Controllers\Profile.php(26): App\Models\ProfileModel->getProfile('5')
+#8 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(933): App\Controllers\Profile->index()
+#9 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+#10 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\rewrite.php(44): require_once('D:\\Laragon\\lara...')
+#15 {main}
+CRITICAL - 2025-05-29 07:13:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'profile_picture' in 'field list'
+[Method: GET, Route: profile]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = :users.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(613): CodeIgniter\Model->doFind(true, '5')
+ 4 APPPATH\Models\ProfileModel.php(83): CodeIgniter\BaseModel->find('5')
+ 5 APPPATH\Controllers\Profile.php(26): App\Models\ProfileModel->getProfile('5')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-29 07:13:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'profile_picture' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = :users.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(613): CodeIgniter\Model->doFind(true, '5')
+ 6 APPPATH\Models\ProfileModel.php(83): CodeIgniter\BaseModel->find('5')
+ 7 APPPATH\Controllers\Profile.php(26): App\Models\ProfileModel->getProfile('5')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-29 07:13:43 --> [Caused by] mysqli_sql_exception: Unknown column 'profile_picture' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `username`, `email`, `full_name`, `profile_picture`, `phone`, `address`, `bio`, `created_at`, `updated_at`
+FROM `users`
+WHERE `users`.`id` = :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(613): CodeIgniter\Model->doFind(true, '5')
+ 7 APPPATH\Models\ProfileModel.php(83): CodeIgniter\BaseModel->find('5')
+ 8 APPPATH\Controllers\Profile.php(26): App\Models\ProfileModel->getProfile('5')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profile->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+DEBUG - 2025-05-29 07:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:14:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:34:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:34:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 07:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:05:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:05:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:08:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:09:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-29 08:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -72,7 +72,7 @@ class ProfileModel extends Model
     // Callbacks
     protected $allowCallbacks = true;
     protected $beforeInsert = ['hashPassword'];
-    protected $beforeUpdate = ['hashPassword'];
+    // protected $beforeUpdate = ['hashPassword'];
 
     /**
      * Get user profile by ID
@@ -207,14 +207,14 @@ class ProfileModel extends Model
     /**
      * Hash password before insert/update
      */
-    protected function hashPassword(array $data)
-    {
-        if (isset($data['data']['password']) && !empty($data['data']['password'])) {
-            $data['data']['password'] = password_hash($data['data']['password'], PASSWORD_DEFAULT);
-        }
+    // protected function hashPassword(array $data)
+    // {
+    //     if (isset($data['data']['password']) && !empty($data['data']['password'])) {
+    //         $data['data']['password'] = password_hash($data['data']['password'], PASSWORD_DEFAULT);
+    //     }
         
-        return $data;
-    }
+    //     return $data;
+    // }
 
     /**
      * Custom validation for profile update

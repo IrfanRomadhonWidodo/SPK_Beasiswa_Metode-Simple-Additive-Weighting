@@ -7,15 +7,22 @@ use App\Models\ProfileModel;
 class Profile extends BaseController
 {
     protected $userModel;
+    protected $session;
 
     public function __construct()
     {
         $this->userModel = new ProfileModel();
+        $this->session = \Config\Services::session(); // Tambahkan ini
     }
 
     public function index()
     {
-        $userId = session()->get('user_id'); // Sesuaikan dengan session Anda
+        // Cek apakah user sudah login
+        if (!$this->session->get('logged_in')) {
+            return redirect()->to('/auth/login');
+        }
+
+        $userId = $this->session->get('user_id');
         $user = $this->userModel->find($userId);
         
         return view('profile', [
@@ -26,7 +33,12 @@ class Profile extends BaseController
 
     public function update()
     {
-        $userId = session()->get('user_id');
+        // Cek apakah user sudah login
+        if (!$this->session->get('logged_in')) {
+            return redirect()->to('/auth/login');
+        }
+
+        $userId = $this->session->get('user_id');
         
         $rules = [
             'username' => 'required|min_length[3]|max_length[50]|is_unique[users.username,id,' . $userId . ']',
@@ -35,7 +47,7 @@ class Profile extends BaseController
         ];
 
         if (!$this->validate($rules)) {
-            return redirect()->back()->withInput()->with('validation', $this->validator);
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
         $data = [
@@ -46,6 +58,13 @@ class Profile extends BaseController
         ];
 
         if ($this->userModel->update($userId, $data)) {
+            // Update session data juga
+            $this->session->set([
+                'username' => $data['username'],
+                'email' => $data['email'],
+                'full_name' => $data['full_name']
+            ]);
+            
             return redirect()->to('/profile')->with('success', 'Profile berhasil diupdate!');
         } else {
             return redirect()->back()->with('error', 'Gagal mengupdate profile.');
@@ -54,7 +73,12 @@ class Profile extends BaseController
 
     public function changePassword()
     {
-        $userId = session()->get('user_id');
+        // Cek apakah user sudah login
+        if (!$this->session->get('logged_in')) {
+            return redirect()->to('/auth/login');
+        }
+
+        $userId = $this->session->get('user_id');
         
         $rules = [
             'current_password' => 'required',
@@ -63,21 +87,31 @@ class Profile extends BaseController
         ];
 
         if (!$this->validate($rules)) {
-            return redirect()->back()->with('validation', $this->validator);
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
+        // Ambil data user dari database
         $user = $this->userModel->find($userId);
         
+        if (!$user) {
+            return redirect()->back()->with('error', 'User tidak ditemukan.');
+        }
+
+        // Verifikasi password saat ini
         if (!password_verify($this->request->getPost('current_password'), $user['password'])) {
             return redirect()->back()->with('error', 'Password saat ini salah.');
         }
 
-        $newPassword = password_hash($this->request->getPost('new_password'), PASSWORD_DEFAULT);
+        // Hash password baru
+        $newPasswordHash = password_hash($this->request->getPost('new_password'), PASSWORD_DEFAULT);
         
-        if ($this->userModel->update($userId, ['password' => $newPassword])) {
+        // Update password di database
+        $updateData = ['password' => $newPasswordHash];
+        
+        if ($this->userModel->update($userId, $updateData)) {
             return redirect()->to('/profile')->with('success', 'Password berhasil diubah!');
         } else {
-            return redirect()->back()->with('error', 'Gagal mengubah password.');
+            return redirect()->back()->with('error', 'Gagal mengubah password. Silakan coba lagi.');
         }
     }
 }
