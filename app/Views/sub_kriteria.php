@@ -234,24 +234,33 @@
                 }
             ],
             rowCallback: function(row, data) {
-                if (!window.kriteriaColors) window.kriteriaColors = {};
-
-                if (!window.kriteriaColors[data.kode_kriteria]) {
-                    const warnaList = [
-                        '#fee2e2', '#d1fae5', '#fef9c3', '#dbeafe', '#ede9fe',
-                        '#fce7f3', '#e0f2fe', '#f0fdf4', '#fff7ed', '#f3f4f6'
+                if (!window.kriteriaColors) {
+                    window.kriteriaColors = {};
+                    window.availableColors = [
+                        '#fee2e2', // merah pastel
+                        '#d1fae5', // hijau pastel
+                        '#fef9c3', // kuning pastel
+                        '#dbeafe', // biru pastel
+                        '#ede9fe', // ungu pastel
+                        '#fce7f3', // pink terang
+                        '#e0f2fe', // biru muda
+                        '#f0fdf4', // hijau pucat
+                        '#e9d5ff', // ungu terang
+                        '#bae6fd'  // ungu muda
                     ];
-
-                    // Hash sederhana: jumlah charCode dari kode_kriteria
-                    let hash = 0;
-                    for (let i = 0; i < data.kode_kriteria.length; i++) {
-                        hash += data.kode_kriteria.charCodeAt(i);
-                    }
-
-                    const colorIndex = hash % warnaList.length;
-                    window.kriteriaColors[data.kode_kriteria] = warnaList[colorIndex];
                 }
 
+                if (!window.kriteriaColors[data.kode_kriteria]) {
+                    // Cek apakah masih ada warna tersedia
+                    if (window.availableColors.length > 0) {
+                        // Ambil warna pertama dari antrian dan tetapkan
+                        const assignedColor = window.availableColors.shift();
+                        window.kriteriaColors[data.kode_kriteria] = assignedColor;
+                    } else {
+                        // Jika warna habis, fallback ke warna abu-abu default
+                        window.kriteriaColors[data.kode_kriteria] = '#e5e7eb';
+                    }
+                }
 
                 $(row).css('background-color', window.kriteriaColors[data.kode_kriteria]);
             },
