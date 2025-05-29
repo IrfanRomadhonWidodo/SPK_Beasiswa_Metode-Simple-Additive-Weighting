@@ -93,17 +93,17 @@
             </a>
             
         <!-- Collapse Button -->
-        <form action="<?= base_url('auth/logout') ?>" method="POST" class="inline">
-            <?= csrf_field() ?>
-            <button type="submit" class="flex items-center gap-2 mt-6 py-3 px-4 rounded-md bg-purple-800 bg-opacity-50 hover:bg-opacity-70 transition-all mb-4 w-fit shadow-sm hover:shadow-md">
-                <!-- Arrow Icon yang diperbaiki -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="m12 19-7-7 7-7"/>
-                    <path d="M19 12H5"/>
-                </svg>
-                <span class="text-sm text-white font-medium">Logout</span>
-            </button>
-        </form>
+            <!-- Form Logout -->
+            <form action="<?= base_url('auth/logout') ?>" method="POST" class="inline mt-auto">
+                <?= csrf_field() ?>
+                <button type="submit" class="flex items-center gap-2 mt-6 py-3 px-4 rounded-md bg-purple-800 bg-opacity-50 hover:bg-opacity-70 transition-all mb-4 w-fit shadow-sm hover:shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m12 19-7-7 7-7"/>
+                        <path d="M19 12H5"/>
+                    </svg>
+                    <span class="text-sm text-white font-medium">Logout</span>
+                </button>
+            </form>
         </div>
     </nav>
 </div>
