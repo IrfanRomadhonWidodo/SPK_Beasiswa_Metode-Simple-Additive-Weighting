@@ -84,7 +84,8 @@ class Alternatif extends BaseController
                         }
                     }
                 }
-
+                $db = \Config\Database::connect();
+                $db->query("UPDATE alternatif_nilai an JOIN sub_kriteria sk ON an.sub_kriteria_id = sk.id SET an.bobot = sk.bobot WHERE an.kode_alternatif = ?", [$kodeAlternatif]);
                 return $this->response->setJSON([
                     'success' => true,
                     'message' => 'Data alternatif berhasil ditambahkan'
@@ -163,7 +164,8 @@ class Alternatif extends BaseController
                         }
                     }
                 }
-
+                $db = \Config\Database::connect();
+                $db->query("UPDATE alternatif_nilai an JOIN sub_kriteria sk ON an.sub_kriteria_id = sk.id SET an.bobot = sk.bobot WHERE an.kode_alternatif = ?", [$kodeAlternatif]);
                 return $this->response->setJSON([
                     'success' => true,
                     'message' => 'Data alternatif berhasil diupdate'

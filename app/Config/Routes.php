@@ -75,3 +75,16 @@ $routes->group('preferensi', function($routes) {
     $routes->get('getKriteriaOptions', 'Preferensi::getKriteriaOptions');
     $routes->get('getTotalBobot', 'Preferensi::getTotalBobot');
 });
+
+
+// Tambahkan route ini ke dalam file app/Config/Routes.php
+
+// Route untuk Matriks Keputusan
+$routes->get('matrik-keputusan', 'MatrikKeputusanController::index');
+$routes->get('matrik-keputusan/data', 'MatrikKeputusanController::getMatrikData');
+$routes->get('matrik-keputusan/json', 'MatrikKeputusanController::getMatrikData');
+
+
+// Route untuk Data Perhitungan (jika belum ada)
+// Route baru (gunakan controller)
+$routes->get('data_perhitungan', 'DataPerhitunganController::index');

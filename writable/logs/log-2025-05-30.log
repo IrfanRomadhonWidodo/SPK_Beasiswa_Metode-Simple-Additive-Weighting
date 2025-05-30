@@ -2667,3 +2667,899 @@ DEBUG - 2025-05-30 11:14:37 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-05-30 11:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-05-30 11:15:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-05-30 11:15:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-30 11:17:50 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3 in D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_al...', 0)
+#1 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_al...')
+#2 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_al...')
+#3 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_al...', Array, false)
+#4 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+#7 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Controllers\Alternatif.php(245): App\Models\AlternatifModel->getNextKodeAlternatif()
+#8 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+#9 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+#10 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\rewrite.php(44): require_once('D:\\Laragon\\lara...')
+#15 {main}
+CRITICAL - 2025-05-30 11:17:50 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3
+[Method: GET, Route: alternatif/getNextKode]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = :kode_alternatif REGEXP:
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Alternatif.php(245): App\Models\AlternatifModel->getNextKodeAlternatif()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 11:17:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = :kode_alternatif REGEXP:
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Alternatif.php(245): App\Models\AlternatifModel->getNextKodeAlternatif()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 11:17:50 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = :kode_alternatif REGEXP:
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Alternatif.php(245): App\Models\AlternatifModel->getNextKodeAlternatif()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+DEBUG - 2025-05-30 11:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:30:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:30:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-30 11:30:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3 in D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_al...', 0)
+#1 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_al...')
+#2 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_al...')
+#3 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_al...', Array, false)
+#4 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+#7 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Controllers\Alternatif.php(249): App\Models\AlternatifModel->getNextKodeAlternatif()
+#8 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+#9 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+#10 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\rewrite.php(44): require_once('D:\\Laragon\\lara...')
+#15 {main}
+CRITICAL - 2025-05-30 11:30:56 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3
+[Method: GET, Route: alternatif/getNextKode]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = :kode_alternatif REGEXP:
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Alternatif.php(249): App\Models\AlternatifModel->getNextKodeAlternatif()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 11:30:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = :kode_alternatif REGEXP:
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Alternatif.php(249): App\Models\AlternatifModel->getNextKodeAlternatif()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 11:30:56 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = :kode_alternatif REGEXP:
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Alternatif.php(249): App\Models\AlternatifModel->getNextKodeAlternatif()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+DEBUG - 2025-05-30 11:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:31:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-30 11:40:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3 in D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_al...', 0)
+#1 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_al...')
+#2 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_al...')
+#3 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_al...', Array, false)
+#4 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+#7 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Controllers\Alternatif.php(247): App\Models\AlternatifModel->getNextKodeAlternatif()
+#8 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+#9 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+#10 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\rewrite.php(44): require_once('D:\\Laragon\\lara...')
+#15 {main}
+CRITICAL - 2025-05-30 11:40:37 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3
+[Method: GET, Route: alternatif/getNextKode]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = :kode_alternatif REGEXP:
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Alternatif.php(247): App\Models\AlternatifModel->getNextKodeAlternatif()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 11:40:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = :kode_alternatif REGEXP:
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Alternatif.php(247): App\Models\AlternatifModel->getNextKodeAlternatif()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 11:40:37 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = :kode_alternatif REGEXP:
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Alternatif.php(247): App\Models\AlternatifModel->getNextKodeAlternatif()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+DEBUG - 2025-05-30 11:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 11:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 12:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 13:27:36 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: data_perhitungan]
+in APPPATH\Views\math\matrik_keputusan.php on line 40.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik_keputusan', [], true)
+ 4 APPPATH\Views\data_perhitungan.php(72): view('math/matrik_keputusan')
+ 5 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 8 APPPATH\Config\Routes.php(88): view('data_perhitungan')
+ 9 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 13:27:36 --> [Caused by] ErrorException: Undefined variable $alternatifList
+in APPPATH\Views\math\matrik_keputusan.php on line 40.
+ 1 APPPATH\Views\math\matrik_keputusan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alternatifList', 'D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\math\\matrik_keputusan.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\math\\matrik_keputusan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik_keputusan', [], true)
+ 5 APPPATH\Views\data_perhitungan.php(72): view('math/matrik_keputusan')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 9 APPPATH\Config\Routes.php(88): view('data_perhitungan')
+10 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 13:28:35 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: data_perhitungan]
+in APPPATH\Views\math\matrik_keputusan.php on line 40.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik_keputusan', [], true)
+ 4 APPPATH\Views\data_perhitungan.php(72): view('math/matrik_keputusan')
+ 5 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 8 APPPATH\Config\Routes.php(88): view('data_perhitungan')
+ 9 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 13:28:35 --> [Caused by] ErrorException: Undefined variable $alternatifList
+in APPPATH\Views\math\matrik_keputusan.php on line 40.
+ 1 APPPATH\Views\math\matrik_keputusan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alternatifList', 'D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\math\\matrik_keputusan.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\math\\matrik_keputusan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik_keputusan', [], true)
+ 5 APPPATH\Views\data_perhitungan.php(72): view('math/matrik_keputusan')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 9 APPPATH\Config\Routes.php(88): view('data_perhitungan')
+10 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 13:37:51 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: data_perhitungan]
+in APPPATH\Views\math\matrik_keputusan.php on line 40.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik_keputusan', [], true)
+ 4 APPPATH\Views\data_perhitungan.php(72): view('math/matrik_keputusan')
+ 5 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 8 APPPATH\Config\Routes.php(89): view('data_perhitungan')
+ 9 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 13:37:51 --> [Caused by] ErrorException: Undefined variable $alternatifList
+in APPPATH\Views\math\matrik_keputusan.php on line 40.
+ 1 APPPATH\Views\math\matrik_keputusan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alternatifList', 'D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\math\\matrik_keputusan.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\math\\matrik_keputusan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik_keputusan', [], true)
+ 5 APPPATH\Views\data_perhitungan.php(72): view('math/matrik_keputusan')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 9 APPPATH\Config\Routes.php(89): view('data_perhitungan')
+10 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 13:37:51 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: data_perhitungan]
+in APPPATH\Views\math\matrik_keputusan.php on line 40.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik_keputusan', [], true)
+ 4 APPPATH\Views\data_perhitungan.php(72): view('math/matrik_keputusan')
+ 5 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 8 APPPATH\Config\Routes.php(89): view('data_perhitungan')
+ 9 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 13:37:51 --> [Caused by] ErrorException: Undefined variable $alternatifList
+in APPPATH\Views\math\matrik_keputusan.php on line 40.
+ 1 APPPATH\Views\math\matrik_keputusan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alternatifList', 'D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\math\\matrik_keputusan.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\math\\matrik_keputusan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik_keputusan', [], true)
+ 5 APPPATH\Views\data_perhitungan.php(72): view('math/matrik_keputusan')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 9 APPPATH\Config\Routes.php(89): view('data_perhitungan')
+10 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+DEBUG - 2025-05-30 13:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 13:42:09 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: data_perhitungan]
+in APPPATH\Views\data_perhitungan.php on line 111.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 4 APPPATH\Config\Routes.php(89): view('data_perhitungan')
+ 5 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 13:42:09 --> [Caused by] ErrorException: Undefined variable $alternatifList
+in APPPATH\Views\data_perhitungan.php on line 111.
+ 1 APPPATH\Views\data_perhitungan.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alternatifList', 'D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php', 111)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 5 APPPATH\Config\Routes.php(89): view('data_perhitungan')
+ 6 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 13:46:20 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: data_perhitungan]
+in APPPATH\Views\math\matrik_keputusan.php on line 40.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik_keputusan', [], true)
+ 4 APPPATH\Views\data_perhitungan.php(72): view('math/matrik_keputusan')
+ 5 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 8 APPPATH\Config\Routes.php(89): view('data_perhitungan')
+ 9 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 13:46:20 --> [Caused by] ErrorException: Undefined variable $alternatifList
+in APPPATH\Views\math\matrik_keputusan.php on line 40.
+ 1 APPPATH\Views\math\matrik_keputusan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alternatifList', 'D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\math\\matrik_keputusan.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\math\\matrik_keputusan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik_keputusan', [], true)
+ 5 APPPATH\Views\data_perhitungan.php(72): view('math/matrik_keputusan')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 9 APPPATH\Config\Routes.php(89): view('data_perhitungan')
+10 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 13:46:20 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: data_perhitungan]
+in APPPATH\Views\math\matrik_keputusan.php on line 40.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik_keputusan', [], true)
+ 4 APPPATH\Views\data_perhitungan.php(72): view('math/matrik_keputusan')
+ 5 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 8 APPPATH\Config\Routes.php(89): view('data_perhitungan')
+ 9 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 13:46:20 --> [Caused by] ErrorException: Undefined variable $alternatifList
+in APPPATH\Views\math\matrik_keputusan.php on line 40.
+ 1 APPPATH\Views\math\matrik_keputusan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alternatifList', 'D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\math\\matrik_keputusan.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\math\\matrik_keputusan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik_keputusan', [], true)
+ 5 APPPATH\Views\data_perhitungan.php(72): view('math/matrik_keputusan')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 9 APPPATH\Config\Routes.php(89): view('data_perhitungan')
+10 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+DEBUG - 2025-05-30 13:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 13:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 13:46:26 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: data_perhitungan]
+in APPPATH\Views\math\matrik_keputusan.php on line 40.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik_keputusan', [], true)
+ 4 APPPATH\Views\data_perhitungan.php(72): view('math/matrik_keputusan')
+ 5 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 8 APPPATH\Config\Routes.php(89): view('data_perhitungan')
+ 9 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 13:46:26 --> [Caused by] ErrorException: Undefined variable $alternatifList
+in APPPATH\Views\math\matrik_keputusan.php on line 40.
+ 1 APPPATH\Views\math\matrik_keputusan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alternatifList', 'D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\math\\matrik_keputusan.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\math\\matrik_keputusan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik_keputusan', [], true)
+ 5 APPPATH\Views\data_perhitungan.php(72): view('math/matrik_keputusan')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 9 APPPATH\Config\Routes.php(89): view('data_perhitungan')
+10 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 14:00:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "math/matrik-keputusan.php"
+[Method: GET, Route: data_perhitungan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('math/matrik-keputusan.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik-keputusan', [], true)
+ 3 APPPATH\Views\data_perhitungan.php(72): view('math/matrik-keputusan')
+ 4 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 7 APPPATH\Config\Routes.php(90): view('data_perhitungan')
+ 8 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+DEBUG - 2025-05-30 14:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 14:00:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "math/matrik-keputusan.php"
+[Method: GET, Route: data_perhitungan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('math/matrik-keputusan.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik-keputusan', [], true)
+ 3 APPPATH\Views\data_perhitungan.php(72): view('math/matrik-keputusan')
+ 4 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 7 APPPATH\Config\Routes.php(90): view('data_perhitungan')
+ 8 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+ 9 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 14:01:02 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: data_perhitungan]
+in APPPATH\Views\math\matrik_keputusan.php on line 40.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik_keputusan', [], true)
+ 4 APPPATH\Views\data_perhitungan.php(72): view('math/matrik_keputusan')
+ 5 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 8 APPPATH\Config\Routes.php(90): view('data_perhitungan')
+ 9 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 14:01:02 --> [Caused by] ErrorException: Undefined variable $alternatifList
+in APPPATH\Views\math\matrik_keputusan.php on line 40.
+ 1 APPPATH\Views\math\matrik_keputusan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alternatifList', 'D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\math\\matrik_keputusan.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\math\\matrik_keputusan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik_keputusan', [], true)
+ 5 APPPATH\Views\data_perhitungan.php(72): view('math/matrik_keputusan')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 9 APPPATH\Config\Routes.php(90): view('data_perhitungan')
+10 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 14:01:02 --> TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given
+[Method: GET, Route: data_perhitungan]
+in APPPATH\Views\math\matrik_keputusan.php on line 40.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik_keputusan', [], true)
+ 4 APPPATH\Views\data_perhitungan.php(72): view('math/matrik_keputusan')
+ 5 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 8 APPPATH\Config\Routes.php(90): view('data_perhitungan')
+ 9 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+10 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 14:01:02 --> [Caused by] ErrorException: Undefined variable $alternatifList
+in APPPATH\Views\math\matrik_keputusan.php on line 40.
+ 1 APPPATH\Views\math\matrik_keputusan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $alternatifList', 'D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\math\\matrik_keputusan.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\math\\matrik_keputusan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('math/matrik_keputusan', [], true)
+ 5 APPPATH\Views\data_perhitungan.php(72): view('math/matrik_keputusan')
+ 6 SYSTEMPATH\View\View.php(224): include('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\app\\Views\\data_perhitungan.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('data_perhitungan', [], true)
+ 9 APPPATH\Config\Routes.php(90): view('data_perhitungan')
+10 SYSTEMPATH\CodeIgniter.php(875): CodeIgniter\Router\RouteCollection->{closure}()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 14:03:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "dashboard.php"
+[Method: GET, Route: data_perhitungan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('dashboard', [], true)
+ 3 APPPATH\Controllers\MatrikKeputusanController.php(25): view('dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MatrikKeputusanController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MatrikKeputusanController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+DEBUG - 2025-05-30 14:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:20:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:20:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:20:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:21:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:23:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:23:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 14:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
