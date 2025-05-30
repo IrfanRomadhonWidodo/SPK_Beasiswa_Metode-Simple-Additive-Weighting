@@ -106,7 +106,7 @@
     <!-- Main Content -->
     <div class="flex-1 lg:ml-0">
         <!-- Navbar Include -->
-        <?= view('layout/navbar') ?>
+       
         
         <!-- Page Content -->
         <div class="p-6">
@@ -167,7 +167,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                     <div>
                         <label for="kode_alternatif" class="block text-sm font-medium text-gray-700 mb-2">Kode Alternatif</label>
-                        <input type="text" id="kode_alternatif" name="kode_alternatif" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="Contoh: A1" required readonly>
+                        <input type="text" id="kode_alternatif" name="kode_alternatif" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent" placeholder="Contoh: A1" required>
                         <div id="error_kode_alternatif" class="text-red-500 text-sm mt-1 hidden"></div>
                     </div>
 
