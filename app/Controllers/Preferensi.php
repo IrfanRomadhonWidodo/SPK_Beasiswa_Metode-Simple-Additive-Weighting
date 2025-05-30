@@ -4,21 +4,35 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\PreferensiModel;
+use App\Models\ProfileModel; 
 use CodeIgniter\HTTP\ResponseInterface;
 
 class Preferensi extends BaseController
 {
     protected $preferensiModel;
+    protected $userModel;
+    protected $session;
 
     public function __construct()
     {
         $this->preferensiModel = new PreferensiModel();
+        $this->userModel = new ProfileModel();
+        $this->session = \Config\Services::session();
     }
 
     public function index()
     {
+        // Cek apakah user sudah login
+        if (!$this->session->get('logged_in')) {
+            return redirect()->to('/auth/login');
+        }
+
+        // Ambil data user
+        $userId = $this->session->get('user_id');
+        $user = $this->userModel->find($userId);
         $data = [
-            'title' => 'Data Preferensi'
+            'title' => 'Data Preferensi',
+            'user' => $user
         ];
 
         return view('data_preferensi', $data);

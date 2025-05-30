@@ -101,6 +101,7 @@
     <!-- Main Content -->
     <div class="flex-1 lg:ml-0">
         <!-- Navbar Include -->
+        <?= view('layout/navbar') ?>
    
         
         <!-- Page Content -->
