@@ -1679,3 +1679,676 @@ DEBUG - 2025-05-30 08:22:42 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-05-30 08:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-05-30 08:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-05-30 08:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:27:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 08:56:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-30 08:56:36 --> mysqli_sql_exception: Unknown column 'preferensi.no' in 'order clause' in D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `prefere...', 0)
+#1 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prefere...')
+#2 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prefere...')
+#3 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `prefere...', Array, false)
+#4 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Models\PreferensiModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Controllers\Preferensi.php(32): App\Models\PreferensiModel->getDataForDataTable(Array)
+#6 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(933): App\Controllers\Preferensi->getData()
+#7 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Preferensi))
+#8 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\rewrite.php(44): require_once('D:\\Laragon\\lara...')
+#13 {main}
+CRITICAL - 2025-05-30 08:56:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'preferensi.no' in 'order clause'
+[Method: POST, Route: preferensi/getData]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `preferensi`.*, `kriteria`.`variabel`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`
+ORDER BY `preferensi`.`no` ASC
+ LIMIT 10', [], false)
+ 2 APPPATH\Models\PreferensiModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Preferensi.php(32): App\Models\PreferensiModel->getDataForDataTable([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Preferensi->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Preferensi))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 08:56:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'preferensi.no' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `preferensi`.*, `kriteria`.`variabel`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`
+ORDER BY `preferensi`.`no` ASC
+ LIMIT 10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `preferensi`.*, `kriteria`.`variabel`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`
+ORDER BY `preferensi`.`no` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `preferensi`.*, `kriteria`.`variabel`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`
+ORDER BY `preferensi`.`no` ASC
+ LIMIT 10', [], false)
+ 4 APPPATH\Models\PreferensiModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Preferensi.php(32): App\Models\PreferensiModel->getDataForDataTable([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Preferensi->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Preferensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 08:56:36 --> [Caused by] mysqli_sql_exception: Unknown column 'preferensi.no' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `preferensi`.*, `kriteria`.`variabel`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`
+ORDER BY `preferensi`.`no` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `preferensi`.*, `kriteria`.`variabel`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`
+ORDER BY `preferensi`.`no` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `preferensi`.*, `kriteria`.`variabel`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`
+ORDER BY `preferensi`.`no` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `preferensi`.*, `kriteria`.`variabel`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`
+ORDER BY `preferensi`.`no` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\Models\PreferensiModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Preferensi.php(32): App\Models\PreferensiModel->getDataForDataTable([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Preferensi->getData()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Preferensi))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+ERROR - 2025-05-30 08:59:22 --> mysqli_sql_exception: Table 'db_spkbeasiswa.preferensi' doesn't exist in D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Models\PreferensiModel.php(81): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Controllers\Preferensi.php(32): App\Models\PreferensiModel->getDataForDataTable(Array)
+#6 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(933): App\Controllers\Preferensi->getData()
+#7 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Preferensi))
+#8 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\rewrite.php(44): require_once('D:\\Laragon\\lara...')
+#13 {main}
+CRITICAL - 2025-05-30 08:59:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_spkbeasiswa.preferensi' doesn't exist
+[Method: POST, Route: preferensi/getData]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`', [], false)
+ 2 APPPATH\Models\PreferensiModel.php(81): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 APPPATH\Controllers\Preferensi.php(32): App\Models\PreferensiModel->getDataForDataTable([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Preferensi->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Preferensi))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 08:59:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_spkbeasiswa.preferensi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`', [], false)
+ 4 APPPATH\Models\PreferensiModel.php(81): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 APPPATH\Controllers\Preferensi.php(32): App\Models\PreferensiModel->getDataForDataTable([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Preferensi->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Preferensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 08:59:22 --> [Caused by] mysqli_sql_exception: Table 'db_spkbeasiswa.preferensi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`', [], false)
+ 5 APPPATH\Models\PreferensiModel.php(81): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 APPPATH\Controllers\Preferensi.php(32): App\Models\PreferensiModel->getDataForDataTable([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Preferensi->getData()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Preferensi))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+ERROR - 2025-05-30 09:01:07 --> mysqli_sql_exception: Table 'db_spkbeasiswa.preferensi' doesn't exist in D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_kr...', 0)
+#1 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_kr...')
+#2 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_kr...')
+#3 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_kr...', Array, false)
+#4 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Controllers\Preferensi.php(179): CodeIgniter\BaseModel->findAll()
+#7 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(933): App\Controllers\Preferensi->getKriteriaOptions()
+#8 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Preferensi))
+#9 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\rewrite.php(44): require_once('D:\\Laragon\\lara...')
+#14 {main}
+CRITICAL - 2025-05-30 09:01:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_spkbeasiswa.preferensi' doesn't exist
+[Method: GET, Route: preferensi/getKriteriaOptions]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_kriteria`
+FROM `preferensi`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Preferensi.php(179): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Preferensi->getKriteriaOptions()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Preferensi))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 09:01:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_spkbeasiswa.preferensi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_kriteria`
+FROM `preferensi`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_kriteria`
+FROM `preferensi`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_kriteria`
+FROM `preferensi`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Preferensi.php(179): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Preferensi->getKriteriaOptions()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Preferensi))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 09:01:07 --> [Caused by] mysqli_sql_exception: Table 'db_spkbeasiswa.preferensi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_kriteria`
+FROM `preferensi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_kriteria`
+FROM `preferensi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_kriteria`
+FROM `preferensi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_kriteria`
+FROM `preferensi`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Preferensi.php(179): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Preferensi->getKriteriaOptions()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Preferensi))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+ERROR - 2025-05-30 09:14:11 --> mysqli_sql_exception: Unknown column 'preferensi.no' in 'order clause' in D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `prefere...', 0)
+#1 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `prefere...')
+#2 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `prefere...')
+#3 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `prefere...', Array, false)
+#4 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Models\PreferensiModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Controllers\Preferensi.php(32): App\Models\PreferensiModel->getDataForDataTable(Array)
+#6 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(933): App\Controllers\Preferensi->getData()
+#7 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Preferensi))
+#8 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\rewrite.php(44): require_once('D:\\Laragon\\lara...')
+#13 {main}
+CRITICAL - 2025-05-30 09:14:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'preferensi.no' in 'order clause'
+[Method: POST, Route: preferensi/getData]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `preferensi`.*, `kriteria`.`variabel`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`
+ORDER BY `preferensi`.`no` ASC
+ LIMIT 10', [], false)
+ 2 APPPATH\Models\PreferensiModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Preferensi.php(32): App\Models\PreferensiModel->getDataForDataTable([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Preferensi->getData()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Preferensi))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 09:14:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'preferensi.no' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `preferensi`.*, `kriteria`.`variabel`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`
+ORDER BY `preferensi`.`no` ASC
+ LIMIT 10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `preferensi`.*, `kriteria`.`variabel`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`
+ORDER BY `preferensi`.`no` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `preferensi`.*, `kriteria`.`variabel`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`
+ORDER BY `preferensi`.`no` ASC
+ LIMIT 10', [], false)
+ 4 APPPATH\Models\PreferensiModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Preferensi.php(32): App\Models\PreferensiModel->getDataForDataTable([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Preferensi->getData()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Preferensi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 09:14:11 --> [Caused by] mysqli_sql_exception: Unknown column 'preferensi.no' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `preferensi`.*, `kriteria`.`variabel`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`
+ORDER BY `preferensi`.`no` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `preferensi`.*, `kriteria`.`variabel`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`
+ORDER BY `preferensi`.`no` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `preferensi`.*, `kriteria`.`variabel`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`
+ORDER BY `preferensi`.`no` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `preferensi`.*, `kriteria`.`variabel`
+FROM `preferensi`
+LEFT JOIN `kriteria` ON `kriteria`.`kode_kriteria` = `preferensi`.`kode_kriteria`
+ORDER BY `preferensi`.`no` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH\Models\PreferensiModel.php(88): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Preferensi.php(32): App\Models\PreferensiModel->getDataForDataTable([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Preferensi->getData()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Preferensi))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+DEBUG - 2025-05-30 09:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:16:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-30 09:16:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "preferensi/data_preferensi.php"
+[Method: GET, Route: preferensi]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('preferensi/data_preferensi.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('preferensi/data_preferensi', [], true)
+ 3 APPPATH\Controllers\Preferensi.php(24): view('preferensi/data_preferensi', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Preferensi->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Preferensi))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+DEBUG - 2025-05-30 09:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:22:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-30 09:30:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3 in D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_al...', 0)
+#1 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_al...')
+#2 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_al...')
+#3 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_al...', Array, false)
+#4 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+#7 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Controllers\Alternatif.php(245): App\Models\AlternatifModel->getNextKodeAlternatif()
+#8 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+#9 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+#10 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\rewrite.php(44): require_once('D:\\Laragon\\lara...')
+#15 {main}
+CRITICAL - 2025-05-30 09:30:51 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3
+[Method: GET, Route: alternatif/getNextKode]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = :kode_alternatif REGEXP:
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Alternatif.php(245): App\Models\AlternatifModel->getNextKodeAlternatif()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 09:30:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = :kode_alternatif REGEXP:
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Alternatif.php(245): App\Models\AlternatifModel->getNextKodeAlternatif()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 09:30:51 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = :kode_alternatif REGEXP:
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Alternatif.php(245): App\Models\AlternatifModel->getNextKodeAlternatif()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+DEBUG - 2025-05-30 09:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:36:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:36:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-30 09:53:37 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3 in D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_al...', 0)
+#1 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_al...')
+#2 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_al...')
+#3 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_al...', Array, false)
+#4 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+#7 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Controllers\Alternatif.php(245): App\Models\AlternatifModel->getNextKodeAlternatif()
+#8 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+#9 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+#10 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\rewrite.php(44): require_once('D:\\Laragon\\lara...')
+#15 {main}
+CRITICAL - 2025-05-30 09:53:37 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3
+[Method: GET, Route: alternatif/getNextKode]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = :kode_alternatif REGEXP:
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Alternatif.php(245): App\Models\AlternatifModel->getNextKodeAlternatif()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 09:53:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = :kode_alternatif REGEXP:
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Alternatif.php(245): App\Models\AlternatifModel->getNextKodeAlternatif()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-30 09:53:37 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = :kode_alternatif REGEXP:
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Alternatif.php(245): App\Models\AlternatifModel->getNextKodeAlternatif()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+DEBUG - 2025-05-30 09:53:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 09:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-30 10:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

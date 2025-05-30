@@ -61,3 +61,17 @@ $routes->get('dashboard', 'Auth::dashboard');
         $routes->get('getSubKriteria/(:any)', 'Alternatif::getSubKriteria/$1');
         $routes->get('getNextKode', 'Alternatif::getNextKode');
     });
+
+
+    // Add these routes to your existing Routes.php file
+
+$routes->group('preferensi', function($routes) {
+    $routes->get('/', 'Preferensi::index');
+    $routes->post('getData', 'Preferensi::getData');
+    $routes->post('store', 'Preferensi::store');
+    $routes->get('show/(:num)', 'Preferensi::show/$1');
+    $routes->post('update/(:num)', 'Preferensi::update/$1');
+    $routes->delete('delete/(:num)', 'Preferensi::delete/$1');
+    $routes->get('getKriteriaOptions', 'Preferensi::getKriteriaOptions');
+    $routes->get('getTotalBobot', 'Preferensi::getTotalBobot');
+});
