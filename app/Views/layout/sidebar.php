@@ -47,7 +47,7 @@
                 <span class="text-sm">Data Sub Kriteria</span>
             </a>
             
-            <a href="#" class="flex items-center space-x-3 py-3 px-4 rounded-lg hover:bg-purple-600 hover:bg-opacity-30 transition-colors mb-1">
+            <a href="<?= base_url('alternatif') ?>" class="flex items-center space-x-3 py-3 px-4 rounded-lg hover:bg-purple-600 hover:bg-opacity-30 transition-colors mb-1">
                 <!-- Home Icon -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3L3 10v11h6v-6h6v6h6V10L12 3z" />

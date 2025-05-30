@@ -47,3 +47,17 @@ $routes->get('dashboard', 'Auth::dashboard');
         $routes->post('update/(:num)', 'SubKriteria::update/$1');
         $routes->delete('delete/(:num)', 'SubKriteria::delete/$1');
     });
+
+    // Add these routes to your app/Config/Routes.php file
+
+    $routes->group('alternatif', function($routes) {
+        $routes->get('/', 'Alternatif::index');
+        $routes->post('getData', 'Alternatif::getData');
+        $routes->post('store', 'Alternatif::store');
+        $routes->get('show/(:num)', 'Alternatif::show/$1');
+        $routes->post('update/(:num)', 'Alternatif::update/$1');
+        $routes->delete('delete/(:num)', 'Alternatif::delete/$1');
+        $routes->get('getKriteria', 'Alternatif::getKriteria');
+        $routes->get('getSubKriteria/(:any)', 'Alternatif::getSubKriteria/$1');
+        $routes->get('getNextKode', 'Alternatif::getNextKode');
+    });
