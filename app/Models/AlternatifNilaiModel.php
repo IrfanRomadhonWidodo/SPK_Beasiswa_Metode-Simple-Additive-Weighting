@@ -56,4 +56,21 @@ class AlternatifNilaiModel extends Model
     {
         return $this->where('kode_alternatif', $kodeAlternatif)->delete();
     }
+
+    public function getMatrikKeputusanData()
+{
+    return $this->select('
+                alternatif_nilai.kode_alternatif, 
+                alternatif_nilai.kode_kriteria, 
+                sub_kriteria.bobot, 
+                sub_kriteria.sub_variabel, 
+                kriteria.variabel, 
+                kriteria.jenis_kriteria
+            ')
+        ->join('sub_kriteria', 'sub_kriteria.id = alternatif_nilai.sub_kriteria_id')
+        ->join('kriteria', 'kriteria.kode_kriteria = alternatif_nilai.kode_kriteria')
+        ->orderBy('alternatif_nilai.kode_alternatif, alternatif_nilai.kode_kriteria')
+        ->findAll();
+}
+
 }
