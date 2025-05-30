@@ -7,6 +7,7 @@ use App\Models\AlternatifModel;
 use App\Models\AlternatifNilaiModel;
 use App\Models\KriteriaModel;
 use App\Models\SubKriteriaModel;
+use App\Models\ProfileModel;
 
 class Alternatif extends BaseController
 {
@@ -14,6 +15,8 @@ class Alternatif extends BaseController
     protected $alternatifNilaiModel;
     protected $kriteriaModel;
     protected $subKriteriaModel;
+    protected $userModel;
+    protected $session;
 
     public function __construct()
     {
@@ -21,12 +24,23 @@ class Alternatif extends BaseController
         $this->alternatifNilaiModel = new AlternatifNilaiModel();
         $this->kriteriaModel = new KriteriaModel();
         $this->subKriteriaModel = new SubKriteriaModel();
+        $this->userModel = new ProfileModel();
+        $this->session = \Config\Services::session();
     }
 
     public function index()
     {
+         // Cek apakah user sudah login
+        if (!$this->session->get('logged_in')) {
+            return redirect()->to('/auth/login');
+        }
+
+        // Ambil data user
+        $userId = $this->session->get('user_id');
+        $user = $this->userModel->find($userId);
         $data = [
-            'title' => 'Data Alternatif'
+            'title' => 'Data Alternatif',
+            'user' => $user
         ];
 
         return view('data_alternatif', $data);

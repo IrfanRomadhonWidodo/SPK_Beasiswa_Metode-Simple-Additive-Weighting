@@ -106,7 +106,7 @@
     <!-- Main Content -->
     <div class="flex-1 lg:ml-0">
         <!-- Navbar Include -->
-       
+        <?= view('layout/navbar') ?>
         
         <!-- Page Content -->
         <div class="p-6">
@@ -197,6 +197,30 @@
         </div>
     </div>
 
+        <!-- View Modal -->
+    <div id="viewModal" class="fixed inset-0 z-50 hidden items-center justify-center modal-backdrop">
+        <div class="bg-white rounded-lg shadow-xl p-6 w-full max-w-2xl mx-4 transform transition-all modal-content">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-lg font-semibold text-gray-800">Detail Alternatif</h3>
+                <button onclick="closeViewModal()" class="text-gray-400 hover:text-gray-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div id="viewContent" class="space-y-4">
+                <!-- Content will be loaded here -->
+            </div>
+
+            <div class="mt-6">
+                <button onclick="closeViewModal()" class="w-full px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors">
+                    Tutup
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script>
         let table;
         let isEdit = false;
@@ -221,6 +245,9 @@
                         render: function(data) {
                             return `
                                 <div class="flex gap-2">
+                                     <button onclick="viewAlternatif(${data})" class="bg-green-500 text-white px-2 py-1 rounded text-xs hover:bg-green-600 transition-colors">
+                                        Detail
+                                    </button>
                                     <button onclick="editAlternatif(${data})" class="bg-blue-500 text-white px-2 py-1 rounded text-xs hover:bg-blue-600 transition-colors">
                                         Edit
                                     </button>
@@ -446,19 +473,78 @@
             });
         }
 
-        function displayErrors(errors) {
-            for (let field in errors) {
-                $(`#error_${field}`).removeClass('hidden').text(errors[field]);
-                $(`#${field}`).removeClass('border-gray-300').addClass('border-red-500');
+        function viewAlternatif(id) {
+    $.ajax({
+        url: `<?= base_url('alternatif/show/') ?>${id}`,
+        type: 'GET',
+        success: function(response) {
+            if (response.success) {
+                let html = `
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Kode Alternatif</label>
+                            <div class="p-3 bg-gray-50 border rounded-lg">${response.data.kode_alternatif}</div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Nama Alternatif</label>
+                            <div class="p-3 bg-gray-50 border rounded-lg">${response.data.nama}</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-md font-semibold text-gray-800 mb-3">Penilaian Kriteria</h4>
+                        <div class="space-y-3">
+                `;
+                
+                if (response.data.nilai && response.data.nilai.length > 0) {
+                    response.data.nilai.forEach(function(nilai) {
+                        html += `
+                            <div class="flex justify-between items-center p-3 bg-gray-50 border rounded-lg">
+                                <div>
+                                    <span class="font-medium">${nilai.variabel} (${nilai.kode_kriteria})</span>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-sm text-gray-600">${nilai.sub_variabel}</div>
+                                    <div class="text-xs text-gray-500">Bobot: ${nilai.bobot}</div>
+                                </div>
+                            </div>
+                        `;
+                    });
+                } else {
+                    html += '<div class="text-gray-500 text-center p-4">Tidak ada penilaian kriteria</div>';
+                }
+                
+                html += '</div></div>';
+                
+                $('#viewContent').html(html);
+                $('#viewModal').removeClass('hidden').addClass('flex');
             }
         }
+    });
+}
 
-        // Close modal when clicking outside
-        $('#alternatifModal').on('click', function(e) {
-            if (e.target === this) {
-                closeModal();
+    function closeViewModal() {
+        $('#viewModal').removeClass('flex').addClass('hidden');
+    }
+
+            function displayErrors(errors) {
+                for (let field in errors) {
+                    $(`#error_${field}`).removeClass('hidden').text(errors[field]);
+                    $(`#${field}`).removeClass('border-gray-300').addClass('border-red-500');
+                }
             }
-        });
+
+            // Close modal when clicking outside
+            $('#alternatifModal').on('click', function(e) {
+                if (e.target === this) {
+                    closeModal();
+                }
+            });
+            // Close view modal when clicking outside
+    $('#viewModal').on('click', function(e) {
+        if (e.target === this) {
+            closeViewModal();
+        }
+    });
     </script>
 </body>
 </html>
