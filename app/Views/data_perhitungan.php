@@ -60,6 +60,14 @@
         .dropdown:hover .dropdown-content {
             display: block;
         }
+        #sidebar::-webkit-scrollbar {
+        display: none; /* untuk Chrome, Safari, Opera */
+        }
+
+        #sidebar {
+            -ms-overflow-style: none;  /* untuk IE dan Edge */
+            scrollbar-width: none;     /* untuk Firefox */
+        }
     </style>
 </head>
 <body class="font-sans bg-gray-100 min-h-screen flex">
@@ -67,7 +75,7 @@
     <?= view('layout/sidebar') ?>
 
     <!-- Main Content -->
-    <div class="flex-1 lg:ml-0">
+    <div class="flex-1 lg:ml-64">
         <?= view('layout/navbar') ?>
     
     <?= view('math/matrik_keputusan') ?>

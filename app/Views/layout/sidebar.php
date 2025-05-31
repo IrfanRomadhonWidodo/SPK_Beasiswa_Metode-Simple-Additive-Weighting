@@ -1,7 +1,7 @@
 <!-- Sidebar -->
-<div id="sidebar" class="bg-gradient-sidebar text-white w-64 min-h-screen fixed lg:relative z-30 transform -translate-x-full lg:translate-x-0 transition-transform duration-300">
+<div id="sidebar" class="bg-gradient-sidebar text-white w-64 h-screen fixed left-0 top-0 z-30 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 overflow-y-auto ">
     <!-- Logo -->
-    <div class=" p-6 border-b-2 border-white-500">
+    <div class="p-6 border-b-2 border-white-500 flex-shrink-0">
         <div class="flex items-center space-x-3">
             <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
                 <!-- Academic Cap Icon -->
@@ -15,8 +15,8 @@
     </div>
 
     <!-- Navigation -->
-    <nav class="mt-6">
-        <div class="px-6">
+    <nav class="flex-1 px-6 py-6">
+        <div class="mb-6">
             <a href="<?= base_url('dashboard') ?>" class="flex items-center space-x-3 py-3 px-4 rounded-lg hover:bg-purple-600 hover:bg-opacity-30 transition-colors mb-1">
                 <!-- Chart Bar Icon -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -28,7 +28,7 @@
         </div>
 
         <!-- Master Data Section -->
-        <div class="px-6 mt-6">
+        <div class="mb-6">
             <h3 class="text-xs font-semibold text-purple-200 uppercase tracking-wider mb-3">Master Data</h3>
             
             <a href="<?= base_url('kriteria') ?>" class="flex items-center space-x-3 py-3 px-4 rounded-lg hover:bg-purple-600 hover:bg-opacity-30 transition-colors mb-1">
@@ -81,7 +81,7 @@
         </div>
 
         <!-- Master User Section -->
-        <div class="px-6 mt-6">
+        <div class="mb-6">
             <h3 class="text-xs font-semibold text-purple-200 uppercase tracking-wider mb-3">Master User</h3>
             
             <a href="<?= base_url('profile') ?>" class="flex items-center space-x-3 py-3 px-4 rounded-lg hover:bg-purple-600 hover:bg-opacity-30 transition-colors">
@@ -91,12 +91,13 @@
                 </svg>
                 <span class="text-sm">Profile Settings</span>
             </a>
-            
-        <!-- Collapse Button -->
-            <!-- Form Logout -->
-            <form action="<?= base_url('auth/logout') ?>" method="POST" class="inline mt-auto">
+        </div>
+
+        <!-- Logout Button - Sticky at bottom when scrolled -->
+        <div class="mt-auto">
+            <form action="<?= base_url('auth/logout') ?>" method="POST" class="inline">
                 <?= csrf_field() ?>
-                <button type="submit" class="flex items-center gap-2 mt-6 py-3 px-4 rounded-md bg-purple-800 bg-opacity-50 hover:bg-opacity-70 transition-all mb-4 w-fit shadow-sm hover:shadow-md">
+                <button type="submit" class="flex items-center gap-2 py-3 px-4 rounded-md bg-purple-800 bg-opacity-50 hover:bg-opacity-70 transition-all w-full shadow-sm hover:shadow-md">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="m12 19-7-7 7-7"/>
                         <path d="M19 12H5"/>

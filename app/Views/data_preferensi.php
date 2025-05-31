@@ -92,6 +92,14 @@
             background-color: rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(4px);
         }
+        #sidebar::-webkit-scrollbar {
+        display: none; /* untuk Chrome, Safari, Opera */
+        }
+
+        #sidebar {
+            -ms-overflow-style: none;  /* untuk IE dan Edge */
+            scrollbar-width: none;     /* untuk Firefox */
+        }
     </style>
 </head>
 <body class="font-sans bg-gray-100 min-h-screen flex">
@@ -99,7 +107,7 @@
     <?= view('layout/sidebar') ?>
     
     <!-- Main Content -->
-    <div class="flex-1 lg:ml-0">
+    <div class="flex-1 lg:ml-64">
         <!-- Navbar Include -->
         <?= view('layout/navbar') ?>
    

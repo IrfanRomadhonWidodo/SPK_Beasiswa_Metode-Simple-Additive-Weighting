@@ -147,12 +147,20 @@
                 padding: 0.375rem 0.25rem;
             }
         }
+        #sidebar::-webkit-scrollbar {
+        display: none; /* untuk Chrome, Safari, Opera */
+        }
+
+        #sidebar {
+            -ms-overflow-style: none;  /* untuk IE dan Edge */
+            scrollbar-width: none;     /* untuk Firefox */
+        }
     </style>
 </head>
 <body class="font-sans bg-gray-100 min-h-screen flex">
     <!-- Sidebar Include -->
     <?= view('layout/sidebar') ?>
-    <div class="flex-1 lg:ml-0">
+    <div class="flex-1 lg:ml-64">
         <!-- Navbar Include -->
         <?= view('layout/navbar') ?>
     <!-- Main Content with better width management -->
