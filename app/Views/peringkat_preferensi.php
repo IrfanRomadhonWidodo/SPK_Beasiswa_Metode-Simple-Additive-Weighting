@@ -201,9 +201,14 @@
         <div class="bg-white rounded-lg shadow-md overflow-hidden mb-6">
             <div class="px-4 py-3 bg-gray-50 border-b border-gray-200">
                 <h2 class="text-lg font-semibold text-gray-900 flex items-center">
-                    <svg class="w-5 h-5 mr-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2-2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                    </svg>
+                <svg class="w-5 h-5 mr-2 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+                <!-- Bar kiri (pendek) -->
+                <rect x="3" y="14" width="4" height="7" rx="1"></rect>
+                <!-- Bar tengah (sedang) -->
+                <rect x="10" y="10" width="4" height="11" rx="1"></rect>
+                <!-- Bar kanan (tinggi) -->
+                <rect x="17" y="6" width="4" height="15" rx="1"></rect>
+                </svg>
                     Peringkat Alternatif
                 </h2>
                 <p class="text-xs text-gray-600 mt-1">Hasil perangkingan berdasarkan nilai preferensi tertinggi</p>
@@ -278,9 +283,9 @@
         <div class="bg-white rounded-lg shadow-md overflow-hidden">
             <div class="px-4 py-3 bg-gray-50 border-b border-gray-200">
                 <h3 class="text-lg font-semibold text-gray-900 flex items-center">
-                    <svg class="w-5 h-5 mr-2 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2-2z"></path>
-                    </svg>
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                </svg>
                     Detail Perhitungan Preferensi
                 </h3>
                 <p class="text-xs text-gray-600 mt-1">Tabel detail perhitungan nilai preferensi per alternatif dan kriteria</p>

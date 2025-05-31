@@ -3,18 +3,30 @@
 namespace App\Controllers;
 
 use App\Models\UserModel;
+use App\Models\AlternatifModel;
+use App\Models\AlternatifNilaiModel;
+use App\Models\KriteriaModel;
+use App\Models\SubKriteriaModel;
 use CodeIgniter\Controller;
 
 class Auth extends BaseController
 {
-    protected $userModel;
-    protected $session;
+protected $userModel;
+protected $session;
+protected $alternatifModel;
+protected $alternatifNilaiModel;
+protected $kriteriaModel;
+protected $subKriteriaModel;
 
-    public function __construct()
-    {
-        $this->userModel = new UserModel();
-        $this->session = \Config\Services::session();
-    }
+public function __construct()
+{
+    $this->userModel = new UserModel();
+    $this->session = \Config\Services::session();
+    $this->alternatifModel = new AlternatifModel();
+    $this->alternatifNilaiModel = new AlternatifNilaiModel();
+    $this->kriteriaModel = new KriteriaModel();
+    $this->subKriteriaModel = new SubKriteriaModel();
+}
 
     public function index()
     {
@@ -131,20 +143,45 @@ class Auth extends BaseController
         return redirect()->to('/auth/login')->with('success', 'Logout berhasil!');
     }
 
-    public function dashboard()
-    {
-        if (!$this->session->get('logged_in')) {
-            return redirect()->to('/auth/login');
-        }
-        
-        $data = [
-            'user' => [
-                'full_name' => $this->session->get('full_name'),
-                'username' => $this->session->get('username'),
-                'email' => $this->session->get('email')
-            ]
-        ];
-        
-        return view('auth/dashboard', $data);
+public function dashboard()
+{
+    // Cek apakah user sudah login
+    if (!$this->session->get('logged_in')) {
+        return redirect()->to('/auth/login');
     }
+
+    // Ambil data user dari database
+    $userId = $this->session->get('user_id');
+    $user = $this->userModel->find($userId);
+
+    // Hitung statistik
+    $totalAlternatif = $this->alternatifModel->countAll();
+    $totalKriteria = $this->kriteriaModel->countAll();
+    $totalSubKriteria = $this->subKriteriaModel->countAll();
+    
+    // Hitung total penilaian (alternatif yang sudah dinilai)
+    $alternatifDenganNilai = $this->alternatifNilaiModel
+        ->select('kode_alternatif')
+        ->groupBy('kode_alternatif')
+        ->findAll();
+    $totalPenilaian = count($alternatifDenganNilai);
+
+    // Ambil 5 alternatif terbaru
+    $recentAlternatif = $this->alternatifModel
+        ->orderBy('created_at', 'DESC')
+        ->limit(5)
+        ->findAll();
+
+    $data = [
+        'title' => 'Dashboard',
+        'user' => $user, // Data user lengkap dari database
+        'totalAlternatif' => $totalAlternatif,
+        'totalKriteria' => $totalKriteria,
+        'totalSubKriteria' => $totalSubKriteria,
+        'totalPenilaian' => $totalPenilaian,
+        'recentAlternatif' => $recentAlternatif
+    ];
+    
+    return view('auth/dashboard', $data);
+}
 }
