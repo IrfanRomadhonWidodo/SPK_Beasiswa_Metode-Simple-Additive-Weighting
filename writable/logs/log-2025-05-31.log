@@ -3697,3 +3697,936 @@ INFO - 2025-05-31 03:06:50 --> Normalisasi[A4][C10] = 3 / max(semua nilai di C10
 INFO - 2025-05-31 03:06:50 --> Normalisasi[A5][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
 INFO - 2025-05-31 03:06:50 --> === Selesai memproses Kriteria C10 ===
 INFO - 2025-05-31 03:06:50 --> Hasil normalisasi: {"A1":{"C1":0.2,"C2":0.2,"C3":0.4,"C4":1,"C5":1,"C6":1,"C7":1,"C8":0.2,"C9":0.75,"C10":1},"A2":{"C1":0.2,"C2":0.2,"C3":0.2,"C4":1,"C5":0.67,"C6":0.2,"C7":1,"C8":0.2,"C9":1,"C10":1},"A3":{"C1":1,"C2":0.2,"C3":0.8,"C4":0.2,"C5":1,"C6":1,"C7":1,"C8":1,"C9":1,"C10":1},"A4":{"C1":1,"C2":0.2,"C3":0.8,"C4":0.25,"C5":1,"C6":0.2,"C7":1,"C8":1,"C9":0.75,"C10":1},"A5":{"C1":0.2,"C2":1,"C3":1,"C4":0.2,"C5":0.33,"C6":1,"C7":1,"C8":0.2,"C9":0.75,"C10":1}}
+DEBUG - 2025-05-31 03:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 03:10:39 --> Data dari database: [{"kode_alternatif":"A1","kode_kriteria":"C1","bobot":"1","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A1","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A1","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A1","kode_kriteria":"C3","bobot":"2","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A1","kode_kriteria":"C4","bobot":"1","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A1","kode_kriteria":"C5","bobot":"3","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A1","kode_kriteria":"C6","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A1","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A1","kode_kriteria":"C8","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A1","kode_kriteria":"C9","bobot":"3","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A2","kode_kriteria":"C1","bobot":"1","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A2","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A2","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A2","kode_kriteria":"C3","bobot":"1","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A2","kode_kriteria":"C4","bobot":"1","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A2","kode_kriteria":"C5","bobot":"2","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A2","kode_kriteria":"C6","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A2","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A2","kode_kriteria":"C8","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A2","kode_kriteria":"C9","bobot":"4","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A3","kode_kriteria":"C1","bobot":"5","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A3","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A3","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A3","kode_kriteria":"C3","bobot":"4","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A3","kode_kriteria":"C4","bobot":"5","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A3","kode_kriteria":"C5","bobot":"3","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A3","kode_kriteria":"C6","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A3","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A3","kode_kriteria":"C8","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A3","kode_kriteria":"C9","bobot":"4","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A4","kode_kriteria":"C1","bobot":"5","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A4","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A4","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A4","kode_kriteria":"C3","bobot":"4","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A4","kode_kriteria":"C4","bobot":"4","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A4","kode_kriteria":"C5","bobot":"3","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A4","kode_kriteria":"C6","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A4","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A4","kode_kriteria":"C8","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A4","kode_kriteria":"C9","bobot":"3","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A5","kode_kriteria":"C1","bobot":"1","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A5","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A5","kode_kriteria":"C2","bobot":"5","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A5","kode_kriteria":"C3","bobot":"5","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A5","kode_kriteria":"C4","bobot":"5","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A5","kode_kriteria":"C5","bobot":"1","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A5","kode_kriteria":"C6","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A5","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A5","kode_kriteria":"C8","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A5","kode_kriteria":"C9","bobot":"3","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"}]
+INFO - 2025-05-31 03:10:39 --> Matriks yang terbentuk: {"A1":{"C1":1,"C10":3,"C2":1,"C3":2,"C4":1,"C5":3,"C6":5,"C7":1,"C8":1,"C9":3},"A2":{"C1":1,"C10":3,"C2":1,"C3":1,"C4":1,"C5":2,"C6":1,"C7":1,"C8":1,"C9":4},"A3":{"C1":5,"C10":3,"C2":1,"C3":4,"C4":5,"C5":3,"C6":5,"C7":1,"C8":5,"C9":4},"A4":{"C1":5,"C10":3,"C2":1,"C3":4,"C4":4,"C5":3,"C6":1,"C7":1,"C8":5,"C9":3},"A5":{"C1":1,"C10":3,"C2":5,"C3":5,"C4":5,"C5":1,"C6":5,"C7":1,"C8":1,"C9":3}}
+INFO - 2025-05-31 03:10:39 --> Jenis kriteria: {"C1":"Benefit","C10":"Benefit","C2":"Benefit","C3":"Benefit","C4":"Cost","C5":"Benefit","C6":"Benefit","C7":"Benefit","C8":"Benefit","C9":"Benefit"}
+INFO - 2025-05-31 03:10:39 --> Kriteria C1 (Benefit): bobot = [1,1,5,5,1], max = 5, min = 1
+INFO - 2025-05-31 03:10:39 --> Kriteria C2 (Benefit): bobot = [1,1,1,1,5], max = 5, min = 1
+INFO - 2025-05-31 03:10:39 --> Kriteria C3 (Benefit): bobot = [2,1,4,4,5], max = 5, min = 1
+INFO - 2025-05-31 03:10:39 --> Kriteria C4 (Cost): bobot = [1,1,5,4,5], max = 5, min = 1
+INFO - 2025-05-31 03:10:39 --> Kriteria C5 (Benefit): bobot = [3,2,3,3,1], max = 3, min = 1
+INFO - 2025-05-31 03:10:39 --> Kriteria C6 (Benefit): bobot = [5,1,5,1,5], max = 5, min = 1
+INFO - 2025-05-31 03:10:39 --> Kriteria C7 (Benefit): bobot = [1,1,1,1,1], max = 1, min = 1
+INFO - 2025-05-31 03:10:39 --> Kriteria C8 (Benefit): bobot = [1,1,5,5,1], max = 5, min = 1
+INFO - 2025-05-31 03:10:39 --> Kriteria C9 (Benefit): bobot = [3,4,4,3,3], max = 4, min = 3
+INFO - 2025-05-31 03:10:39 --> Kriteria C10 (Benefit): bobot = [3,3,3,3,3], max = 3, min = 3
+INFO - 2025-05-31 03:10:39 --> === Memproses Kriteria C1 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:10:39 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A1][C1] = 1 / max(semua nilai di C1) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A2][C1] = 1 / max(semua nilai di C1) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A3][C1] = 5 / max(semua nilai di C1) = 5 / 5 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A4][C1] = 5 / max(semua nilai di C1) = 5 / 5 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A5][C1] = 1 / max(semua nilai di C1) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:10:39 --> === Selesai memproses Kriteria C1 ===
+INFO - 2025-05-31 03:10:39 --> === Memproses Kriteria C2 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:10:39 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A1][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A2][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A3][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A4][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A5][C2] = 5 / max(semua nilai di C2) = 5 / 5 = 1
+INFO - 2025-05-31 03:10:39 --> === Selesai memproses Kriteria C2 ===
+INFO - 2025-05-31 03:10:39 --> === Memproses Kriteria C3 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:10:39 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A1][C3] = 2 / max(semua nilai di C3) = 2 / 5 = 0.4
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A2][C3] = 1 / max(semua nilai di C3) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A3][C3] = 4 / max(semua nilai di C3) = 4 / 5 = 0.8
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A4][C3] = 4 / max(semua nilai di C3) = 4 / 5 = 0.8
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A5][C3] = 5 / max(semua nilai di C3) = 5 / 5 = 1
+INFO - 2025-05-31 03:10:39 --> === Selesai memproses Kriteria C3 ===
+INFO - 2025-05-31 03:10:39 --> === Memproses Kriteria C4 (Jenis: Cost) ===
+INFO - 2025-05-31 03:10:39 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A1][C4] = min(semua nilai di C4) / 1 = 1 / 1 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A2][C4] = min(semua nilai di C4) / 1 = 1 / 1 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A3][C4] = min(semua nilai di C4) / 5 = 1 / 5 = 0.2
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A4][C4] = min(semua nilai di C4) / 4 = 1 / 4 = 0.25
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A5][C4] = min(semua nilai di C4) / 5 = 1 / 5 = 0.2
+INFO - 2025-05-31 03:10:39 --> === Selesai memproses Kriteria C4 ===
+INFO - 2025-05-31 03:10:39 --> === Memproses Kriteria C5 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:10:39 --> Max bobot: 3, Min bobot: 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A1][C5] = 3 / max(semua nilai di C5) = 3 / 3 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A2][C5] = 2 / max(semua nilai di C5) = 2 / 3 = 0.66666666666667
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A3][C5] = 3 / max(semua nilai di C5) = 3 / 3 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A4][C5] = 3 / max(semua nilai di C5) = 3 / 3 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A5][C5] = 1 / max(semua nilai di C5) = 1 / 3 = 0.33333333333333
+INFO - 2025-05-31 03:10:39 --> === Selesai memproses Kriteria C5 ===
+INFO - 2025-05-31 03:10:39 --> === Memproses Kriteria C6 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:10:39 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A1][C6] = 5 / max(semua nilai di C6) = 5 / 5 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A2][C6] = 1 / max(semua nilai di C6) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A3][C6] = 5 / max(semua nilai di C6) = 5 / 5 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A4][C6] = 1 / max(semua nilai di C6) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A5][C6] = 5 / max(semua nilai di C6) = 5 / 5 = 1
+INFO - 2025-05-31 03:10:39 --> === Selesai memproses Kriteria C6 ===
+INFO - 2025-05-31 03:10:39 --> === Memproses Kriteria C7 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:10:39 --> Max bobot: 1, Min bobot: 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A1][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A2][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A3][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A4][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A5][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:10:39 --> === Selesai memproses Kriteria C7 ===
+INFO - 2025-05-31 03:10:39 --> === Memproses Kriteria C8 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:10:39 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A1][C8] = 1 / max(semua nilai di C8) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A2][C8] = 1 / max(semua nilai di C8) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A3][C8] = 5 / max(semua nilai di C8) = 5 / 5 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A4][C8] = 5 / max(semua nilai di C8) = 5 / 5 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A5][C8] = 1 / max(semua nilai di C8) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:10:39 --> === Selesai memproses Kriteria C8 ===
+INFO - 2025-05-31 03:10:39 --> === Memproses Kriteria C9 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:10:39 --> Max bobot: 4, Min bobot: 3
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A1][C9] = 3 / max(semua nilai di C9) = 3 / 4 = 0.75
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A2][C9] = 4 / max(semua nilai di C9) = 4 / 4 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A3][C9] = 4 / max(semua nilai di C9) = 4 / 4 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A4][C9] = 3 / max(semua nilai di C9) = 3 / 4 = 0.75
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A5][C9] = 3 / max(semua nilai di C9) = 3 / 4 = 0.75
+INFO - 2025-05-31 03:10:39 --> === Selesai memproses Kriteria C9 ===
+INFO - 2025-05-31 03:10:39 --> === Memproses Kriteria C10 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:10:39 --> Max bobot: 3, Min bobot: 3
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A1][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A2][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A3][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A4][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:10:39 --> Normalisasi[A5][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:10:39 --> === Selesai memproses Kriteria C10 ===
+INFO - 2025-05-31 03:10:39 --> Hasil normalisasi: {"A1":{"C1":0.2,"C2":0.2,"C3":0.4,"C4":1,"C5":1,"C6":1,"C7":1,"C8":0.2,"C9":0.75,"C10":1},"A2":{"C1":0.2,"C2":0.2,"C3":0.2,"C4":1,"C5":0.67,"C6":0.2,"C7":1,"C8":0.2,"C9":1,"C10":1},"A3":{"C1":1,"C2":0.2,"C3":0.8,"C4":0.2,"C5":1,"C6":1,"C7":1,"C8":1,"C9":1,"C10":1},"A4":{"C1":1,"C2":0.2,"C3":0.8,"C4":0.25,"C5":1,"C6":0.2,"C7":1,"C8":1,"C9":0.75,"C10":1},"A5":{"C1":0.2,"C2":1,"C3":1,"C4":0.2,"C5":0.33,"C6":1,"C7":1,"C8":0.2,"C9":0.75,"C10":1}}
+DEBUG - 2025-05-31 03:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 03:11:22 --> Data dari database: [{"kode_alternatif":"A1","kode_kriteria":"C1","bobot":"1","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A1","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A1","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A1","kode_kriteria":"C3","bobot":"2","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A1","kode_kriteria":"C4","bobot":"1","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A1","kode_kriteria":"C5","bobot":"3","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A1","kode_kriteria":"C6","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A1","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A1","kode_kriteria":"C8","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A1","kode_kriteria":"C9","bobot":"3","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A2","kode_kriteria":"C1","bobot":"1","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A2","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A2","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A2","kode_kriteria":"C3","bobot":"1","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A2","kode_kriteria":"C4","bobot":"1","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A2","kode_kriteria":"C5","bobot":"2","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A2","kode_kriteria":"C6","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A2","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A2","kode_kriteria":"C8","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A2","kode_kriteria":"C9","bobot":"4","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A3","kode_kriteria":"C1","bobot":"5","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A3","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A3","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A3","kode_kriteria":"C3","bobot":"4","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A3","kode_kriteria":"C4","bobot":"5","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A3","kode_kriteria":"C5","bobot":"3","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A3","kode_kriteria":"C6","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A3","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A3","kode_kriteria":"C8","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A3","kode_kriteria":"C9","bobot":"4","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A4","kode_kriteria":"C1","bobot":"5","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A4","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A4","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A4","kode_kriteria":"C3","bobot":"4","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A4","kode_kriteria":"C4","bobot":"4","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A4","kode_kriteria":"C5","bobot":"3","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A4","kode_kriteria":"C6","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A4","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A4","kode_kriteria":"C8","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A4","kode_kriteria":"C9","bobot":"3","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A5","kode_kriteria":"C1","bobot":"1","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A5","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A5","kode_kriteria":"C2","bobot":"5","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A5","kode_kriteria":"C3","bobot":"5","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A5","kode_kriteria":"C4","bobot":"5","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A5","kode_kriteria":"C5","bobot":"1","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A5","kode_kriteria":"C6","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A5","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A5","kode_kriteria":"C8","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A5","kode_kriteria":"C9","bobot":"3","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"}]
+INFO - 2025-05-31 03:11:22 --> Matriks yang terbentuk: {"A1":{"C1":1,"C10":3,"C2":1,"C3":2,"C4":1,"C5":3,"C6":5,"C7":1,"C8":1,"C9":3},"A2":{"C1":1,"C10":3,"C2":1,"C3":1,"C4":1,"C5":2,"C6":1,"C7":1,"C8":1,"C9":4},"A3":{"C1":5,"C10":3,"C2":1,"C3":4,"C4":5,"C5":3,"C6":5,"C7":1,"C8":5,"C9":4},"A4":{"C1":5,"C10":3,"C2":1,"C3":4,"C4":4,"C5":3,"C6":1,"C7":1,"C8":5,"C9":3},"A5":{"C1":1,"C10":3,"C2":5,"C3":5,"C4":5,"C5":1,"C6":5,"C7":1,"C8":1,"C9":3}}
+INFO - 2025-05-31 03:11:22 --> Jenis kriteria: {"C1":"Benefit","C10":"Benefit","C2":"Benefit","C3":"Benefit","C4":"Cost","C5":"Benefit","C6":"Benefit","C7":"Benefit","C8":"Benefit","C9":"Benefit"}
+INFO - 2025-05-31 03:11:22 --> Kriteria C1 (Benefit): bobot = [1,1,5,5,1], max = 5, min = 1
+INFO - 2025-05-31 03:11:22 --> Kriteria C2 (Benefit): bobot = [1,1,1,1,5], max = 5, min = 1
+INFO - 2025-05-31 03:11:22 --> Kriteria C3 (Benefit): bobot = [2,1,4,4,5], max = 5, min = 1
+INFO - 2025-05-31 03:11:22 --> Kriteria C4 (Cost): bobot = [1,1,5,4,5], max = 5, min = 1
+INFO - 2025-05-31 03:11:22 --> Kriteria C5 (Benefit): bobot = [3,2,3,3,1], max = 3, min = 1
+INFO - 2025-05-31 03:11:22 --> Kriteria C6 (Benefit): bobot = [5,1,5,1,5], max = 5, min = 1
+INFO - 2025-05-31 03:11:22 --> Kriteria C7 (Benefit): bobot = [1,1,1,1,1], max = 1, min = 1
+INFO - 2025-05-31 03:11:22 --> Kriteria C8 (Benefit): bobot = [1,1,5,5,1], max = 5, min = 1
+INFO - 2025-05-31 03:11:22 --> Kriteria C9 (Benefit): bobot = [3,4,4,3,3], max = 4, min = 3
+INFO - 2025-05-31 03:11:22 --> Kriteria C10 (Benefit): bobot = [3,3,3,3,3], max = 3, min = 3
+INFO - 2025-05-31 03:11:22 --> === Memproses Kriteria C1 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:11:22 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A1][C1] = 1 / max(semua nilai di C1) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A2][C1] = 1 / max(semua nilai di C1) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A3][C1] = 5 / max(semua nilai di C1) = 5 / 5 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A4][C1] = 5 / max(semua nilai di C1) = 5 / 5 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A5][C1] = 1 / max(semua nilai di C1) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:22 --> === Selesai memproses Kriteria C1 ===
+INFO - 2025-05-31 03:11:22 --> === Memproses Kriteria C2 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:11:22 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A1][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A2][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A3][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A4][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A5][C2] = 5 / max(semua nilai di C2) = 5 / 5 = 1
+INFO - 2025-05-31 03:11:22 --> === Selesai memproses Kriteria C2 ===
+INFO - 2025-05-31 03:11:22 --> === Memproses Kriteria C3 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:11:22 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A1][C3] = 2 / max(semua nilai di C3) = 2 / 5 = 0.4
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A2][C3] = 1 / max(semua nilai di C3) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A3][C3] = 4 / max(semua nilai di C3) = 4 / 5 = 0.8
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A4][C3] = 4 / max(semua nilai di C3) = 4 / 5 = 0.8
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A5][C3] = 5 / max(semua nilai di C3) = 5 / 5 = 1
+INFO - 2025-05-31 03:11:22 --> === Selesai memproses Kriteria C3 ===
+INFO - 2025-05-31 03:11:22 --> === Memproses Kriteria C4 (Jenis: Cost) ===
+INFO - 2025-05-31 03:11:22 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A1][C4] = min(semua nilai di C4) / 1 = 1 / 1 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A2][C4] = min(semua nilai di C4) / 1 = 1 / 1 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A3][C4] = min(semua nilai di C4) / 5 = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A4][C4] = min(semua nilai di C4) / 4 = 1 / 4 = 0.25
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A5][C4] = min(semua nilai di C4) / 5 = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:22 --> === Selesai memproses Kriteria C4 ===
+INFO - 2025-05-31 03:11:22 --> === Memproses Kriteria C5 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:11:22 --> Max bobot: 3, Min bobot: 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A1][C5] = 3 / max(semua nilai di C5) = 3 / 3 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A2][C5] = 2 / max(semua nilai di C5) = 2 / 3 = 0.66666666666667
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A3][C5] = 3 / max(semua nilai di C5) = 3 / 3 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A4][C5] = 3 / max(semua nilai di C5) = 3 / 3 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A5][C5] = 1 / max(semua nilai di C5) = 1 / 3 = 0.33333333333333
+INFO - 2025-05-31 03:11:22 --> === Selesai memproses Kriteria C5 ===
+INFO - 2025-05-31 03:11:22 --> === Memproses Kriteria C6 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:11:22 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A1][C6] = 5 / max(semua nilai di C6) = 5 / 5 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A2][C6] = 1 / max(semua nilai di C6) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A3][C6] = 5 / max(semua nilai di C6) = 5 / 5 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A4][C6] = 1 / max(semua nilai di C6) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A5][C6] = 5 / max(semua nilai di C6) = 5 / 5 = 1
+INFO - 2025-05-31 03:11:22 --> === Selesai memproses Kriteria C6 ===
+INFO - 2025-05-31 03:11:22 --> === Memproses Kriteria C7 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:11:22 --> Max bobot: 1, Min bobot: 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A1][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A2][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A3][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A4][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A5][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:11:22 --> === Selesai memproses Kriteria C7 ===
+INFO - 2025-05-31 03:11:22 --> === Memproses Kriteria C8 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:11:22 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A1][C8] = 1 / max(semua nilai di C8) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A2][C8] = 1 / max(semua nilai di C8) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A3][C8] = 5 / max(semua nilai di C8) = 5 / 5 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A4][C8] = 5 / max(semua nilai di C8) = 5 / 5 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A5][C8] = 1 / max(semua nilai di C8) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:22 --> === Selesai memproses Kriteria C8 ===
+INFO - 2025-05-31 03:11:22 --> === Memproses Kriteria C9 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:11:22 --> Max bobot: 4, Min bobot: 3
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A1][C9] = 3 / max(semua nilai di C9) = 3 / 4 = 0.75
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A2][C9] = 4 / max(semua nilai di C9) = 4 / 4 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A3][C9] = 4 / max(semua nilai di C9) = 4 / 4 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A4][C9] = 3 / max(semua nilai di C9) = 3 / 4 = 0.75
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A5][C9] = 3 / max(semua nilai di C9) = 3 / 4 = 0.75
+INFO - 2025-05-31 03:11:22 --> === Selesai memproses Kriteria C9 ===
+INFO - 2025-05-31 03:11:22 --> === Memproses Kriteria C10 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:11:22 --> Max bobot: 3, Min bobot: 3
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A1][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A2][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A3][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A4][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:11:22 --> Normalisasi[A5][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:11:22 --> === Selesai memproses Kriteria C10 ===
+INFO - 2025-05-31 03:11:22 --> Hasil normalisasi: {"A1":{"C1":0.2,"C2":0.2,"C3":0.4,"C4":1,"C5":1,"C6":1,"C7":1,"C8":0.2,"C9":0.75,"C10":1},"A2":{"C1":0.2,"C2":0.2,"C3":0.2,"C4":1,"C5":0.67,"C6":0.2,"C7":1,"C8":0.2,"C9":1,"C10":1},"A3":{"C1":1,"C2":0.2,"C3":0.8,"C4":0.2,"C5":1,"C6":1,"C7":1,"C8":1,"C9":1,"C10":1},"A4":{"C1":1,"C2":0.2,"C3":0.8,"C4":0.25,"C5":1,"C6":0.2,"C7":1,"C8":1,"C9":0.75,"C10":1},"A5":{"C1":0.2,"C2":1,"C3":1,"C4":0.2,"C5":0.33,"C6":1,"C7":1,"C8":0.2,"C9":0.75,"C10":1}}
+DEBUG - 2025-05-31 03:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 03:11:52 --> Data dari database: [{"kode_alternatif":"A1","kode_kriteria":"C1","bobot":"1","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A1","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A1","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A1","kode_kriteria":"C3","bobot":"2","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A1","kode_kriteria":"C4","bobot":"1","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A1","kode_kriteria":"C5","bobot":"3","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A1","kode_kriteria":"C6","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A1","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A1","kode_kriteria":"C8","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A1","kode_kriteria":"C9","bobot":"3","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A2","kode_kriteria":"C1","bobot":"1","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A2","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A2","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A2","kode_kriteria":"C3","bobot":"1","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A2","kode_kriteria":"C4","bobot":"1","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A2","kode_kriteria":"C5","bobot":"2","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A2","kode_kriteria":"C6","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A2","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A2","kode_kriteria":"C8","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A2","kode_kriteria":"C9","bobot":"4","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A3","kode_kriteria":"C1","bobot":"5","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A3","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A3","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A3","kode_kriteria":"C3","bobot":"4","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A3","kode_kriteria":"C4","bobot":"5","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A3","kode_kriteria":"C5","bobot":"3","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A3","kode_kriteria":"C6","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A3","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A3","kode_kriteria":"C8","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A3","kode_kriteria":"C9","bobot":"4","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A4","kode_kriteria":"C1","bobot":"5","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A4","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A4","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A4","kode_kriteria":"C3","bobot":"4","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A4","kode_kriteria":"C4","bobot":"4","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A4","kode_kriteria":"C5","bobot":"3","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A4","kode_kriteria":"C6","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A4","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A4","kode_kriteria":"C8","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A4","kode_kriteria":"C9","bobot":"3","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A5","kode_kriteria":"C1","bobot":"1","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A5","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A5","kode_kriteria":"C2","bobot":"5","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A5","kode_kriteria":"C3","bobot":"5","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A5","kode_kriteria":"C4","bobot":"5","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A5","kode_kriteria":"C5","bobot":"1","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A5","kode_kriteria":"C6","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A5","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A5","kode_kriteria":"C8","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A5","kode_kriteria":"C9","bobot":"3","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"}]
+INFO - 2025-05-31 03:11:52 --> Matriks yang terbentuk: {"A1":{"C1":1,"C10":3,"C2":1,"C3":2,"C4":1,"C5":3,"C6":5,"C7":1,"C8":1,"C9":3},"A2":{"C1":1,"C10":3,"C2":1,"C3":1,"C4":1,"C5":2,"C6":1,"C7":1,"C8":1,"C9":4},"A3":{"C1":5,"C10":3,"C2":1,"C3":4,"C4":5,"C5":3,"C6":5,"C7":1,"C8":5,"C9":4},"A4":{"C1":5,"C10":3,"C2":1,"C3":4,"C4":4,"C5":3,"C6":1,"C7":1,"C8":5,"C9":3},"A5":{"C1":1,"C10":3,"C2":5,"C3":5,"C4":5,"C5":1,"C6":5,"C7":1,"C8":1,"C9":3}}
+INFO - 2025-05-31 03:11:52 --> Jenis kriteria: {"C1":"Benefit","C10":"Benefit","C2":"Benefit","C3":"Benefit","C4":"Cost","C5":"Benefit","C6":"Benefit","C7":"Benefit","C8":"Benefit","C9":"Benefit"}
+INFO - 2025-05-31 03:11:52 --> Kriteria C1 (Benefit): bobot = [1,1,5,5,1], max = 5, min = 1
+INFO - 2025-05-31 03:11:52 --> Kriteria C2 (Benefit): bobot = [1,1,1,1,5], max = 5, min = 1
+INFO - 2025-05-31 03:11:52 --> Kriteria C3 (Benefit): bobot = [2,1,4,4,5], max = 5, min = 1
+INFO - 2025-05-31 03:11:52 --> Kriteria C4 (Cost): bobot = [1,1,5,4,5], max = 5, min = 1
+INFO - 2025-05-31 03:11:52 --> Kriteria C5 (Benefit): bobot = [3,2,3,3,1], max = 3, min = 1
+INFO - 2025-05-31 03:11:52 --> Kriteria C6 (Benefit): bobot = [5,1,5,1,5], max = 5, min = 1
+INFO - 2025-05-31 03:11:52 --> Kriteria C7 (Benefit): bobot = [1,1,1,1,1], max = 1, min = 1
+INFO - 2025-05-31 03:11:52 --> Kriteria C8 (Benefit): bobot = [1,1,5,5,1], max = 5, min = 1
+INFO - 2025-05-31 03:11:52 --> Kriteria C9 (Benefit): bobot = [3,4,4,3,3], max = 4, min = 3
+INFO - 2025-05-31 03:11:52 --> Kriteria C10 (Benefit): bobot = [3,3,3,3,3], max = 3, min = 3
+INFO - 2025-05-31 03:11:52 --> === Memproses Kriteria C1 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:11:52 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A1][C1] = 1 / max(semua nilai di C1) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A2][C1] = 1 / max(semua nilai di C1) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A3][C1] = 5 / max(semua nilai di C1) = 5 / 5 = 1
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A4][C1] = 5 / max(semua nilai di C1) = 5 / 5 = 1
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A5][C1] = 1 / max(semua nilai di C1) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:52 --> === Selesai memproses Kriteria C1 ===
+INFO - 2025-05-31 03:11:52 --> === Memproses Kriteria C2 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:11:52 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A1][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A2][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A3][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A4][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A5][C2] = 5 / max(semua nilai di C2) = 5 / 5 = 1
+INFO - 2025-05-31 03:11:52 --> === Selesai memproses Kriteria C2 ===
+INFO - 2025-05-31 03:11:52 --> === Memproses Kriteria C3 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:11:52 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A1][C3] = 2 / max(semua nilai di C3) = 2 / 5 = 0.4
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A2][C3] = 1 / max(semua nilai di C3) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A3][C3] = 4 / max(semua nilai di C3) = 4 / 5 = 0.8
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A4][C3] = 4 / max(semua nilai di C3) = 4 / 5 = 0.8
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A5][C3] = 5 / max(semua nilai di C3) = 5 / 5 = 1
+INFO - 2025-05-31 03:11:52 --> === Selesai memproses Kriteria C3 ===
+INFO - 2025-05-31 03:11:52 --> === Memproses Kriteria C4 (Jenis: Cost) ===
+INFO - 2025-05-31 03:11:52 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A1][C4] = min(semua nilai di C4) / 1 = 1 / 1 = 1
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A2][C4] = min(semua nilai di C4) / 1 = 1 / 1 = 1
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A3][C4] = min(semua nilai di C4) / 5 = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A4][C4] = min(semua nilai di C4) / 4 = 1 / 4 = 0.25
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A5][C4] = min(semua nilai di C4) / 5 = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:52 --> === Selesai memproses Kriteria C4 ===
+INFO - 2025-05-31 03:11:52 --> === Memproses Kriteria C5 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:11:52 --> Max bobot: 3, Min bobot: 1
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A1][C5] = 3 / max(semua nilai di C5) = 3 / 3 = 1
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A2][C5] = 2 / max(semua nilai di C5) = 2 / 3 = 0.66666666666667
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A3][C5] = 3 / max(semua nilai di C5) = 3 / 3 = 1
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A4][C5] = 3 / max(semua nilai di C5) = 3 / 3 = 1
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A5][C5] = 1 / max(semua nilai di C5) = 1 / 3 = 0.33333333333333
+INFO - 2025-05-31 03:11:52 --> === Selesai memproses Kriteria C5 ===
+INFO - 2025-05-31 03:11:52 --> === Memproses Kriteria C6 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:11:52 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A1][C6] = 5 / max(semua nilai di C6) = 5 / 5 = 1
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A2][C6] = 1 / max(semua nilai di C6) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:52 --> Normalisasi[A3][C6] = 5 / max(semua nilai di C6) = 5 / 5 = 1
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A4][C6] = 1 / max(semua nilai di C6) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A5][C6] = 5 / max(semua nilai di C6) = 5 / 5 = 1
+INFO - 2025-05-31 03:11:53 --> === Selesai memproses Kriteria C6 ===
+INFO - 2025-05-31 03:11:53 --> === Memproses Kriteria C7 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:11:53 --> Max bobot: 1, Min bobot: 1
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A1][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A2][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A3][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A4][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A5][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:11:53 --> === Selesai memproses Kriteria C7 ===
+INFO - 2025-05-31 03:11:53 --> === Memproses Kriteria C8 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:11:53 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A1][C8] = 1 / max(semua nilai di C8) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A2][C8] = 1 / max(semua nilai di C8) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A3][C8] = 5 / max(semua nilai di C8) = 5 / 5 = 1
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A4][C8] = 5 / max(semua nilai di C8) = 5 / 5 = 1
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A5][C8] = 1 / max(semua nilai di C8) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:11:53 --> === Selesai memproses Kriteria C8 ===
+INFO - 2025-05-31 03:11:53 --> === Memproses Kriteria C9 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:11:53 --> Max bobot: 4, Min bobot: 3
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A1][C9] = 3 / max(semua nilai di C9) = 3 / 4 = 0.75
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A2][C9] = 4 / max(semua nilai di C9) = 4 / 4 = 1
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A3][C9] = 4 / max(semua nilai di C9) = 4 / 4 = 1
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A4][C9] = 3 / max(semua nilai di C9) = 3 / 4 = 0.75
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A5][C9] = 3 / max(semua nilai di C9) = 3 / 4 = 0.75
+INFO - 2025-05-31 03:11:53 --> === Selesai memproses Kriteria C9 ===
+INFO - 2025-05-31 03:11:53 --> === Memproses Kriteria C10 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:11:53 --> Max bobot: 3, Min bobot: 3
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A1][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A2][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A3][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A4][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:11:53 --> Normalisasi[A5][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:11:53 --> === Selesai memproses Kriteria C10 ===
+INFO - 2025-05-31 03:11:53 --> Hasil normalisasi: {"A1":{"C1":0.2,"C2":0.2,"C3":0.4,"C4":1,"C5":1,"C6":1,"C7":1,"C8":0.2,"C9":0.75,"C10":1},"A2":{"C1":0.2,"C2":0.2,"C3":0.2,"C4":1,"C5":0.67,"C6":0.2,"C7":1,"C8":0.2,"C9":1,"C10":1},"A3":{"C1":1,"C2":0.2,"C3":0.8,"C4":0.2,"C5":1,"C6":1,"C7":1,"C8":1,"C9":1,"C10":1},"A4":{"C1":1,"C2":0.2,"C3":0.8,"C4":0.25,"C5":1,"C6":0.2,"C7":1,"C8":1,"C9":0.75,"C10":1},"A5":{"C1":0.2,"C2":1,"C3":1,"C4":0.2,"C5":0.33,"C6":1,"C7":1,"C8":0.2,"C9":0.75,"C10":1}}
+DEBUG - 2025-05-31 03:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 03:12:15 --> Data dari database: [{"kode_alternatif":"A1","kode_kriteria":"C1","bobot":"1","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A1","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A1","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A1","kode_kriteria":"C3","bobot":"2","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A1","kode_kriteria":"C4","bobot":"1","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A1","kode_kriteria":"C5","bobot":"3","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A1","kode_kriteria":"C6","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A1","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A1","kode_kriteria":"C8","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A1","kode_kriteria":"C9","bobot":"3","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A2","kode_kriteria":"C1","bobot":"1","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A2","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A2","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A2","kode_kriteria":"C3","bobot":"1","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A2","kode_kriteria":"C4","bobot":"1","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A2","kode_kriteria":"C5","bobot":"2","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A2","kode_kriteria":"C6","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A2","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A2","kode_kriteria":"C8","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A2","kode_kriteria":"C9","bobot":"4","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A3","kode_kriteria":"C1","bobot":"5","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A3","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A3","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A3","kode_kriteria":"C3","bobot":"4","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A3","kode_kriteria":"C4","bobot":"5","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A3","kode_kriteria":"C5","bobot":"3","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A3","kode_kriteria":"C6","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A3","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A3","kode_kriteria":"C8","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A3","kode_kriteria":"C9","bobot":"4","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A4","kode_kriteria":"C1","bobot":"5","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A4","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A4","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A4","kode_kriteria":"C3","bobot":"4","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A4","kode_kriteria":"C4","bobot":"4","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A4","kode_kriteria":"C5","bobot":"3","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A4","kode_kriteria":"C6","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A4","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A4","kode_kriteria":"C8","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A4","kode_kriteria":"C9","bobot":"3","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A5","kode_kriteria":"C1","bobot":"1","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A5","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A5","kode_kriteria":"C2","bobot":"5","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A5","kode_kriteria":"C3","bobot":"5","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A5","kode_kriteria":"C4","bobot":"5","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A5","kode_kriteria":"C5","bobot":"1","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A5","kode_kriteria":"C6","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A5","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A5","kode_kriteria":"C8","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A5","kode_kriteria":"C9","bobot":"3","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"}]
+INFO - 2025-05-31 03:12:15 --> Matriks yang terbentuk: {"A1":{"C1":1,"C10":3,"C2":1,"C3":2,"C4":1,"C5":3,"C6":5,"C7":1,"C8":1,"C9":3},"A2":{"C1":1,"C10":3,"C2":1,"C3":1,"C4":1,"C5":2,"C6":1,"C7":1,"C8":1,"C9":4},"A3":{"C1":5,"C10":3,"C2":1,"C3":4,"C4":5,"C5":3,"C6":5,"C7":1,"C8":5,"C9":4},"A4":{"C1":5,"C10":3,"C2":1,"C3":4,"C4":4,"C5":3,"C6":1,"C7":1,"C8":5,"C9":3},"A5":{"C1":1,"C10":3,"C2":5,"C3":5,"C4":5,"C5":1,"C6":5,"C7":1,"C8":1,"C9":3}}
+INFO - 2025-05-31 03:12:15 --> Jenis kriteria: {"C1":"Benefit","C10":"Benefit","C2":"Benefit","C3":"Benefit","C4":"Cost","C5":"Benefit","C6":"Benefit","C7":"Benefit","C8":"Benefit","C9":"Benefit"}
+INFO - 2025-05-31 03:12:15 --> Kriteria C1 (Benefit): bobot = [1,1,5,5,1], max = 5, min = 1
+INFO - 2025-05-31 03:12:15 --> Kriteria C2 (Benefit): bobot = [1,1,1,1,5], max = 5, min = 1
+INFO - 2025-05-31 03:12:15 --> Kriteria C3 (Benefit): bobot = [2,1,4,4,5], max = 5, min = 1
+INFO - 2025-05-31 03:12:15 --> Kriteria C4 (Cost): bobot = [1,1,5,4,5], max = 5, min = 1
+INFO - 2025-05-31 03:12:15 --> Kriteria C5 (Benefit): bobot = [3,2,3,3,1], max = 3, min = 1
+INFO - 2025-05-31 03:12:15 --> Kriteria C6 (Benefit): bobot = [5,1,5,1,5], max = 5, min = 1
+INFO - 2025-05-31 03:12:15 --> Kriteria C7 (Benefit): bobot = [1,1,1,1,1], max = 1, min = 1
+INFO - 2025-05-31 03:12:15 --> Kriteria C8 (Benefit): bobot = [1,1,5,5,1], max = 5, min = 1
+INFO - 2025-05-31 03:12:15 --> Kriteria C9 (Benefit): bobot = [3,4,4,3,3], max = 4, min = 3
+INFO - 2025-05-31 03:12:15 --> Kriteria C10 (Benefit): bobot = [3,3,3,3,3], max = 3, min = 3
+INFO - 2025-05-31 03:12:15 --> === Memproses Kriteria C1 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:12:15 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A1][C1] = 1 / max(semua nilai di C1) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A2][C1] = 1 / max(semua nilai di C1) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A3][C1] = 5 / max(semua nilai di C1) = 5 / 5 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A4][C1] = 5 / max(semua nilai di C1) = 5 / 5 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A5][C1] = 1 / max(semua nilai di C1) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:12:15 --> === Selesai memproses Kriteria C1 ===
+INFO - 2025-05-31 03:12:15 --> === Memproses Kriteria C2 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:12:15 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A1][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A2][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A3][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A4][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A5][C2] = 5 / max(semua nilai di C2) = 5 / 5 = 1
+INFO - 2025-05-31 03:12:15 --> === Selesai memproses Kriteria C2 ===
+INFO - 2025-05-31 03:12:15 --> === Memproses Kriteria C3 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:12:15 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A1][C3] = 2 / max(semua nilai di C3) = 2 / 5 = 0.4
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A2][C3] = 1 / max(semua nilai di C3) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A3][C3] = 4 / max(semua nilai di C3) = 4 / 5 = 0.8
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A4][C3] = 4 / max(semua nilai di C3) = 4 / 5 = 0.8
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A5][C3] = 5 / max(semua nilai di C3) = 5 / 5 = 1
+INFO - 2025-05-31 03:12:15 --> === Selesai memproses Kriteria C3 ===
+INFO - 2025-05-31 03:12:15 --> === Memproses Kriteria C4 (Jenis: Cost) ===
+INFO - 2025-05-31 03:12:15 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A1][C4] = min(semua nilai di C4) / 1 = 1 / 1 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A2][C4] = min(semua nilai di C4) / 1 = 1 / 1 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A3][C4] = min(semua nilai di C4) / 5 = 1 / 5 = 0.2
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A4][C4] = min(semua nilai di C4) / 4 = 1 / 4 = 0.25
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A5][C4] = min(semua nilai di C4) / 5 = 1 / 5 = 0.2
+INFO - 2025-05-31 03:12:15 --> === Selesai memproses Kriteria C4 ===
+INFO - 2025-05-31 03:12:15 --> === Memproses Kriteria C5 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:12:15 --> Max bobot: 3, Min bobot: 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A1][C5] = 3 / max(semua nilai di C5) = 3 / 3 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A2][C5] = 2 / max(semua nilai di C5) = 2 / 3 = 0.66666666666667
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A3][C5] = 3 / max(semua nilai di C5) = 3 / 3 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A4][C5] = 3 / max(semua nilai di C5) = 3 / 3 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A5][C5] = 1 / max(semua nilai di C5) = 1 / 3 = 0.33333333333333
+INFO - 2025-05-31 03:12:15 --> === Selesai memproses Kriteria C5 ===
+INFO - 2025-05-31 03:12:15 --> === Memproses Kriteria C6 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:12:15 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A1][C6] = 5 / max(semua nilai di C6) = 5 / 5 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A2][C6] = 1 / max(semua nilai di C6) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A3][C6] = 5 / max(semua nilai di C6) = 5 / 5 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A4][C6] = 1 / max(semua nilai di C6) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A5][C6] = 5 / max(semua nilai di C6) = 5 / 5 = 1
+INFO - 2025-05-31 03:12:15 --> === Selesai memproses Kriteria C6 ===
+INFO - 2025-05-31 03:12:15 --> === Memproses Kriteria C7 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:12:15 --> Max bobot: 1, Min bobot: 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A1][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A2][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A3][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A4][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A5][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:12:15 --> === Selesai memproses Kriteria C7 ===
+INFO - 2025-05-31 03:12:15 --> === Memproses Kriteria C8 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:12:15 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A1][C8] = 1 / max(semua nilai di C8) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A2][C8] = 1 / max(semua nilai di C8) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A3][C8] = 5 / max(semua nilai di C8) = 5 / 5 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A4][C8] = 5 / max(semua nilai di C8) = 5 / 5 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A5][C8] = 1 / max(semua nilai di C8) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:12:15 --> === Selesai memproses Kriteria C8 ===
+INFO - 2025-05-31 03:12:15 --> === Memproses Kriteria C9 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:12:15 --> Max bobot: 4, Min bobot: 3
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A1][C9] = 3 / max(semua nilai di C9) = 3 / 4 = 0.75
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A2][C9] = 4 / max(semua nilai di C9) = 4 / 4 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A3][C9] = 4 / max(semua nilai di C9) = 4 / 4 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A4][C9] = 3 / max(semua nilai di C9) = 3 / 4 = 0.75
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A5][C9] = 3 / max(semua nilai di C9) = 3 / 4 = 0.75
+INFO - 2025-05-31 03:12:15 --> === Selesai memproses Kriteria C9 ===
+INFO - 2025-05-31 03:12:15 --> === Memproses Kriteria C10 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:12:15 --> Max bobot: 3, Min bobot: 3
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A1][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A2][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A3][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A4][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:12:15 --> Normalisasi[A5][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:12:15 --> === Selesai memproses Kriteria C10 ===
+INFO - 2025-05-31 03:12:15 --> Hasil normalisasi: {"A1":{"C1":0.2,"C2":0.2,"C3":0.4,"C4":1,"C5":1,"C6":1,"C7":1,"C8":0.2,"C9":0.75,"C10":1},"A2":{"C1":0.2,"C2":0.2,"C3":0.2,"C4":1,"C5":0.67,"C6":0.2,"C7":1,"C8":0.2,"C9":1,"C10":1},"A3":{"C1":1,"C2":0.2,"C3":0.8,"C4":0.2,"C5":1,"C6":1,"C7":1,"C8":1,"C9":1,"C10":1},"A4":{"C1":1,"C2":0.2,"C3":0.8,"C4":0.25,"C5":1,"C6":0.2,"C7":1,"C8":1,"C9":0.75,"C10":1},"A5":{"C1":0.2,"C2":1,"C3":1,"C4":0.2,"C5":0.33,"C6":1,"C7":1,"C8":0.2,"C9":0.75,"C10":1}}
+DEBUG - 2025-05-31 03:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:20:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 03:20:09 --> Data dari database: [{"kode_alternatif":"A1","kode_kriteria":"C1","bobot":"1","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A1","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A1","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A1","kode_kriteria":"C3","bobot":"2","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A1","kode_kriteria":"C4","bobot":"1","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A1","kode_kriteria":"C5","bobot":"3","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A1","kode_kriteria":"C6","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A1","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A1","kode_kriteria":"C8","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A1","kode_kriteria":"C9","bobot":"3","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A2","kode_kriteria":"C1","bobot":"1","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A2","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A2","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A2","kode_kriteria":"C3","bobot":"1","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A2","kode_kriteria":"C4","bobot":"1","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A2","kode_kriteria":"C5","bobot":"2","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A2","kode_kriteria":"C6","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A2","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A2","kode_kriteria":"C8","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A2","kode_kriteria":"C9","bobot":"4","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A3","kode_kriteria":"C1","bobot":"5","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A3","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A3","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A3","kode_kriteria":"C3","bobot":"4","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A3","kode_kriteria":"C4","bobot":"5","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A3","kode_kriteria":"C5","bobot":"3","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A3","kode_kriteria":"C6","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A3","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A3","kode_kriteria":"C8","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A3","kode_kriteria":"C9","bobot":"4","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A4","kode_kriteria":"C1","bobot":"5","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A4","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A4","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A4","kode_kriteria":"C3","bobot":"4","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A4","kode_kriteria":"C4","bobot":"4","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A4","kode_kriteria":"C5","bobot":"3","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A4","kode_kriteria":"C6","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A4","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A4","kode_kriteria":"C8","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A4","kode_kriteria":"C9","bobot":"3","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A5","kode_kriteria":"C1","bobot":"1","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A5","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A5","kode_kriteria":"C2","bobot":"5","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A5","kode_kriteria":"C3","bobot":"5","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A5","kode_kriteria":"C4","bobot":"5","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A5","kode_kriteria":"C5","bobot":"1","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A5","kode_kriteria":"C6","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A5","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A5","kode_kriteria":"C8","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A5","kode_kriteria":"C9","bobot":"3","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"}]
+INFO - 2025-05-31 03:20:09 --> Matriks yang terbentuk: {"A1":{"C1":1,"C10":3,"C2":1,"C3":2,"C4":1,"C5":3,"C6":5,"C7":1,"C8":1,"C9":3},"A2":{"C1":1,"C10":3,"C2":1,"C3":1,"C4":1,"C5":2,"C6":1,"C7":1,"C8":1,"C9":4},"A3":{"C1":5,"C10":3,"C2":1,"C3":4,"C4":5,"C5":3,"C6":5,"C7":1,"C8":5,"C9":4},"A4":{"C1":5,"C10":3,"C2":1,"C3":4,"C4":4,"C5":3,"C6":1,"C7":1,"C8":5,"C9":3},"A5":{"C1":1,"C10":3,"C2":5,"C3":5,"C4":5,"C5":1,"C6":5,"C7":1,"C8":1,"C9":3}}
+INFO - 2025-05-31 03:20:09 --> Jenis kriteria: {"C1":"Benefit","C10":"Benefit","C2":"Benefit","C3":"Benefit","C4":"Cost","C5":"Benefit","C6":"Benefit","C7":"Benefit","C8":"Benefit","C9":"Benefit"}
+INFO - 2025-05-31 03:20:09 --> Kriteria C1 (Benefit): bobot = [1,1,5,5,1], max = 5, min = 1
+INFO - 2025-05-31 03:20:09 --> Kriteria C2 (Benefit): bobot = [1,1,1,1,5], max = 5, min = 1
+INFO - 2025-05-31 03:20:09 --> Kriteria C3 (Benefit): bobot = [2,1,4,4,5], max = 5, min = 1
+INFO - 2025-05-31 03:20:09 --> Kriteria C4 (Cost): bobot = [1,1,5,4,5], max = 5, min = 1
+INFO - 2025-05-31 03:20:09 --> Kriteria C5 (Benefit): bobot = [3,2,3,3,1], max = 3, min = 1
+INFO - 2025-05-31 03:20:09 --> Kriteria C6 (Benefit): bobot = [5,1,5,1,5], max = 5, min = 1
+INFO - 2025-05-31 03:20:09 --> Kriteria C7 (Benefit): bobot = [1,1,1,1,1], max = 1, min = 1
+INFO - 2025-05-31 03:20:09 --> Kriteria C8 (Benefit): bobot = [1,1,5,5,1], max = 5, min = 1
+INFO - 2025-05-31 03:20:09 --> Kriteria C9 (Benefit): bobot = [3,4,4,3,3], max = 4, min = 3
+INFO - 2025-05-31 03:20:09 --> Kriteria C10 (Benefit): bobot = [3,3,3,3,3], max = 3, min = 3
+INFO - 2025-05-31 03:20:09 --> === Memproses Kriteria C1 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:20:09 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A1][C1] = 1 / max(semua nilai di C1) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A2][C1] = 1 / max(semua nilai di C1) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A3][C1] = 5 / max(semua nilai di C1) = 5 / 5 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A4][C1] = 5 / max(semua nilai di C1) = 5 / 5 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A5][C1] = 1 / max(semua nilai di C1) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:20:09 --> === Selesai memproses Kriteria C1 ===
+INFO - 2025-05-31 03:20:09 --> === Memproses Kriteria C2 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:20:09 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A1][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A2][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A3][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A4][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A5][C2] = 5 / max(semua nilai di C2) = 5 / 5 = 1
+INFO - 2025-05-31 03:20:09 --> === Selesai memproses Kriteria C2 ===
+INFO - 2025-05-31 03:20:09 --> === Memproses Kriteria C3 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:20:09 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A1][C3] = 2 / max(semua nilai di C3) = 2 / 5 = 0.4
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A2][C3] = 1 / max(semua nilai di C3) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A3][C3] = 4 / max(semua nilai di C3) = 4 / 5 = 0.8
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A4][C3] = 4 / max(semua nilai di C3) = 4 / 5 = 0.8
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A5][C3] = 5 / max(semua nilai di C3) = 5 / 5 = 1
+INFO - 2025-05-31 03:20:09 --> === Selesai memproses Kriteria C3 ===
+INFO - 2025-05-31 03:20:09 --> === Memproses Kriteria C4 (Jenis: Cost) ===
+INFO - 2025-05-31 03:20:09 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A1][C4] = min(semua nilai di C4) / 1 = 1 / 1 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A2][C4] = min(semua nilai di C4) / 1 = 1 / 1 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A3][C4] = min(semua nilai di C4) / 5 = 1 / 5 = 0.2
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A4][C4] = min(semua nilai di C4) / 4 = 1 / 4 = 0.25
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A5][C4] = min(semua nilai di C4) / 5 = 1 / 5 = 0.2
+INFO - 2025-05-31 03:20:09 --> === Selesai memproses Kriteria C4 ===
+INFO - 2025-05-31 03:20:09 --> === Memproses Kriteria C5 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:20:09 --> Max bobot: 3, Min bobot: 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A1][C5] = 3 / max(semua nilai di C5) = 3 / 3 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A2][C5] = 2 / max(semua nilai di C5) = 2 / 3 = 0.66666666666667
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A3][C5] = 3 / max(semua nilai di C5) = 3 / 3 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A4][C5] = 3 / max(semua nilai di C5) = 3 / 3 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A5][C5] = 1 / max(semua nilai di C5) = 1 / 3 = 0.33333333333333
+INFO - 2025-05-31 03:20:09 --> === Selesai memproses Kriteria C5 ===
+INFO - 2025-05-31 03:20:09 --> === Memproses Kriteria C6 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:20:09 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A1][C6] = 5 / max(semua nilai di C6) = 5 / 5 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A2][C6] = 1 / max(semua nilai di C6) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A3][C6] = 5 / max(semua nilai di C6) = 5 / 5 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A4][C6] = 1 / max(semua nilai di C6) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A5][C6] = 5 / max(semua nilai di C6) = 5 / 5 = 1
+INFO - 2025-05-31 03:20:09 --> === Selesai memproses Kriteria C6 ===
+INFO - 2025-05-31 03:20:09 --> === Memproses Kriteria C7 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:20:09 --> Max bobot: 1, Min bobot: 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A1][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A2][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A3][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A4][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A5][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:20:09 --> === Selesai memproses Kriteria C7 ===
+INFO - 2025-05-31 03:20:09 --> === Memproses Kriteria C8 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:20:09 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A1][C8] = 1 / max(semua nilai di C8) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A2][C8] = 1 / max(semua nilai di C8) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A3][C8] = 5 / max(semua nilai di C8) = 5 / 5 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A4][C8] = 5 / max(semua nilai di C8) = 5 / 5 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A5][C8] = 1 / max(semua nilai di C8) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:20:09 --> === Selesai memproses Kriteria C8 ===
+INFO - 2025-05-31 03:20:09 --> === Memproses Kriteria C9 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:20:09 --> Max bobot: 4, Min bobot: 3
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A1][C9] = 3 / max(semua nilai di C9) = 3 / 4 = 0.75
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A2][C9] = 4 / max(semua nilai di C9) = 4 / 4 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A3][C9] = 4 / max(semua nilai di C9) = 4 / 4 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A4][C9] = 3 / max(semua nilai di C9) = 3 / 4 = 0.75
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A5][C9] = 3 / max(semua nilai di C9) = 3 / 4 = 0.75
+INFO - 2025-05-31 03:20:09 --> === Selesai memproses Kriteria C9 ===
+INFO - 2025-05-31 03:20:09 --> === Memproses Kriteria C10 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:20:09 --> Max bobot: 3, Min bobot: 3
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A1][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A2][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A3][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A4][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:20:09 --> Normalisasi[A5][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:20:09 --> === Selesai memproses Kriteria C10 ===
+INFO - 2025-05-31 03:20:09 --> Hasil normalisasi: {"A1":{"C1":0.2,"C2":0.2,"C3":0.4,"C4":1,"C5":1,"C6":1,"C7":1,"C8":0.2,"C9":0.75,"C10":1},"A2":{"C1":0.2,"C2":0.2,"C3":0.2,"C4":1,"C5":0.67,"C6":0.2,"C7":1,"C8":0.2,"C9":1,"C10":1},"A3":{"C1":1,"C2":0.2,"C3":0.8,"C4":0.2,"C5":1,"C6":1,"C7":1,"C8":1,"C9":1,"C10":1},"A4":{"C1":1,"C2":0.2,"C3":0.8,"C4":0.25,"C5":1,"C6":0.2,"C7":1,"C8":1,"C9":0.75,"C10":1},"A5":{"C1":0.2,"C2":1,"C3":1,"C4":0.2,"C5":0.33,"C6":1,"C7":1,"C8":0.2,"C9":0.75,"C10":1}}
+DEBUG - 2025-05-31 03:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-31 03:30:21 --> mysqli_sql_exception: Unknown column 'k.bobot_preferensi' in 'field list' in D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE alternat...', 0)
+#1 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE alternat...')
+#2 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE alternat...')
+#3 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Controllers\Alternatif.php(181): CodeIgniter\Database\BaseConnection->query('UPDATE alternat...', Array)
+#4 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(933): App\Controllers\Alternatif->update('12')
+#5 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+#6 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#8 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\rewrite.php(44): require_once('D:\\Laragon\\lara...')
+#11 {main}
+CRITICAL - 2025-05-31 03:30:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'k.bobot_preferensi' in 'field list'
+[Method: POST, Route: alternatif/update/12]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 APPPATH\Controllers\Alternatif.php(181): CodeIgniter\Database\BaseConnection->query('UPDATE alternatif_nilai an 
+    JOIN kriteria k ON an.kode_kriteria = k.kode_kriteria 
+    SET an.bobot_preferensi = k.bobot_preferensi 
+    WHERE an.kode_alternatif = ?', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->update('12')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-31 03:30:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'k.bobot_preferensi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE alternatif_nilai an 
+    JOIN kriteria k ON an.kode_kriteria = k.kode_kriteria 
+    SET an.bobot_preferensi = k.bobot_preferensi 
+    WHERE an.kode_alternatif = \'A10\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE alternatif_nilai an 
+    JOIN kriteria k ON an.kode_kriteria = k.kode_kriteria 
+    SET an.bobot_preferensi = k.bobot_preferensi 
+    WHERE an.kode_alternatif = \'A10\'')
+ 3 APPPATH\Controllers\Alternatif.php(181): CodeIgniter\Database\BaseConnection->query('UPDATE alternatif_nilai an 
+    JOIN kriteria k ON an.kode_kriteria = k.kode_kriteria 
+    SET an.bobot_preferensi = k.bobot_preferensi 
+    WHERE an.kode_alternatif = ?', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->update('12')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-31 03:30:21 --> [Caused by] mysqli_sql_exception: Unknown column 'k.bobot_preferensi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE alternatif_nilai an 
+    JOIN kriteria k ON an.kode_kriteria = k.kode_kriteria 
+    SET an.bobot_preferensi = k.bobot_preferensi 
+    WHERE an.kode_alternatif = \'A10\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE alternatif_nilai an 
+    JOIN kriteria k ON an.kode_kriteria = k.kode_kriteria 
+    SET an.bobot_preferensi = k.bobot_preferensi 
+    WHERE an.kode_alternatif = \'A10\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE alternatif_nilai an 
+    JOIN kriteria k ON an.kode_kriteria = k.kode_kriteria 
+    SET an.bobot_preferensi = k.bobot_preferensi 
+    WHERE an.kode_alternatif = \'A10\'')
+ 4 APPPATH\Controllers\Alternatif.php(181): CodeIgniter\Database\BaseConnection->query('UPDATE alternatif_nilai an 
+    JOIN kriteria k ON an.kode_kriteria = k.kode_kriteria 
+    SET an.bobot_preferensi = k.bobot_preferensi 
+    WHERE an.kode_alternatif = ?', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->update('12')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+DEBUG - 2025-05-31 03:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-31 03:30:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3 in D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_al...', 0)
+#1 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_al...')
+#2 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_al...')
+#3 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_al...', Array, false)
+#4 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+#7 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\app\Controllers\Alternatif.php(263): App\Models\AlternatifModel->getNextKodeAlternatif()
+#8 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+#9 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+#10 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\Laragon\laragon\www\Kelompok 16_Website SPK Beasiswa Metode SAW\system\rewrite.php(44): require_once('D:\\Laragon\\lara...')
+#15 {main}
+CRITICAL - 2025-05-31 03:30:32 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3
+[Method: GET, Route: alternatif/getNextKode]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = :kode_alternatif REGEXP:
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Alternatif.php(263): App\Models\AlternatifModel->getNextKodeAlternatif()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-31 03:30:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = :kode_alternatif REGEXP:
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Alternatif.php(263): App\Models\AlternatifModel->getNextKodeAlternatif()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+CRITICAL - 2025-05-31 03:30:32 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`REGEXP` = '^A[0-9]+$'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIG' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = \'^A[0-9]+$\'
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `kode_alternatif`
+FROM `alternatif`
+WHERE `kode_alternatif` `REGEXP` = :kode_alternatif REGEXP:
+ORDER BY CAST(SUBSTRING(kode_alternatif DESC, 2) AS UNSIGNED) DESC
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\AlternatifModel.php(104): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Alternatif.php(263): App\Models\AlternatifModel->getNextKodeAlternatif()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Alternatif->getNextKode()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Alternatif))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Laragon\\laragon\\www\\Kelompok 16_Website SPK Beasiswa Metode SAW\\public\\index.php')
+DEBUG - 2025-05-31 03:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:32:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:32:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 03:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 03:34:23 --> Data dari database: [{"kode_alternatif":"A1","kode_kriteria":"C1","bobot":"1","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A1","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A1","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A1","kode_kriteria":"C3","bobot":"2","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A1","kode_kriteria":"C4","bobot":"1","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A1","kode_kriteria":"C5","bobot":"3","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A1","kode_kriteria":"C6","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A1","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A1","kode_kriteria":"C8","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A1","kode_kriteria":"C9","bobot":"3","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A2","kode_kriteria":"C1","bobot":"1","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A2","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A2","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A2","kode_kriteria":"C3","bobot":"1","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A2","kode_kriteria":"C4","bobot":"1","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A2","kode_kriteria":"C5","bobot":"2","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A2","kode_kriteria":"C6","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A2","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A2","kode_kriteria":"C8","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A2","kode_kriteria":"C9","bobot":"4","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A3","kode_kriteria":"C1","bobot":"5","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A3","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A3","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A3","kode_kriteria":"C3","bobot":"4","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A3","kode_kriteria":"C4","bobot":"5","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A3","kode_kriteria":"C5","bobot":"3","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A3","kode_kriteria":"C6","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A3","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A3","kode_kriteria":"C8","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A3","kode_kriteria":"C9","bobot":"4","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A4","kode_kriteria":"C1","bobot":"5","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A4","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A4","kode_kriteria":"C2","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A4","kode_kriteria":"C3","bobot":"4","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A4","kode_kriteria":"C4","bobot":"4","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A4","kode_kriteria":"C5","bobot":"3","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A4","kode_kriteria":"C6","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A4","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A4","kode_kriteria":"C8","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A4","kode_kriteria":"C9","bobot":"3","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"},{"kode_alternatif":"A5","kode_kriteria":"C1","bobot":"1","jenis_kriteria":"Benefit","variabel":"Kondisi Keluarga"},{"kode_alternatif":"A5","kode_kriteria":"C10","bobot":"3","jenis_kriteria":"Benefit","variabel":"Kepemilikan Fasilitas Siswa"},{"kode_alternatif":"A5","kode_kriteria":"C2","bobot":"5","jenis_kriteria":"Benefit","variabel":"Status Orang Tua"},{"kode_alternatif":"A5","kode_kriteria":"C3","bobot":"5","jenis_kriteria":"Benefit","variabel":"Pekerjaan Orang Tua"},{"kode_alternatif":"A5","kode_kriteria":"C4","bobot":"5","jenis_kriteria":"Cost","variabel":"Penghasilan Orang Tua"},{"kode_alternatif":"A5","kode_kriteria":"C5","bobot":"1","jenis_kriteria":"Benefit","variabel":"Tanggungan Keluarga"},{"kode_alternatif":"A5","kode_kriteria":"C6","bobot":"5","jenis_kriteria":"Benefit","variabel":"Jenis Kepemilikan Data Keluarga"},{"kode_alternatif":"A5","kode_kriteria":"C7","bobot":"1","jenis_kriteria":"Benefit","variabel":"Status Hunian"},{"kode_alternatif":"A5","kode_kriteria":"C8","bobot":"1","jenis_kriteria":"Benefit","variabel":"Jenis Hunian"},{"kode_alternatif":"A5","kode_kriteria":"C9","bobot":"3","jenis_kriteria":"Benefit","variabel":"Penilaian Siswa"}]
+INFO - 2025-05-31 03:34:23 --> Matriks yang terbentuk: {"A1":{"C1":1,"C10":3,"C2":1,"C3":2,"C4":1,"C5":3,"C6":5,"C7":1,"C8":1,"C9":3},"A2":{"C1":1,"C10":3,"C2":1,"C3":1,"C4":1,"C5":2,"C6":1,"C7":1,"C8":1,"C9":4},"A3":{"C1":5,"C10":3,"C2":1,"C3":4,"C4":5,"C5":3,"C6":5,"C7":1,"C8":5,"C9":4},"A4":{"C1":5,"C10":3,"C2":1,"C3":4,"C4":4,"C5":3,"C6":1,"C7":1,"C8":5,"C9":3},"A5":{"C1":1,"C10":3,"C2":5,"C3":5,"C4":5,"C5":1,"C6":5,"C7":1,"C8":1,"C9":3}}
+INFO - 2025-05-31 03:34:23 --> Jenis kriteria: {"C1":"Benefit","C10":"Benefit","C2":"Benefit","C3":"Benefit","C4":"Cost","C5":"Benefit","C6":"Benefit","C7":"Benefit","C8":"Benefit","C9":"Benefit"}
+INFO - 2025-05-31 03:34:23 --> Kriteria C1 (Benefit): bobot = [1,1,5,5,1], max = 5, min = 1
+INFO - 2025-05-31 03:34:23 --> Kriteria C2 (Benefit): bobot = [1,1,1,1,5], max = 5, min = 1
+INFO - 2025-05-31 03:34:23 --> Kriteria C3 (Benefit): bobot = [2,1,4,4,5], max = 5, min = 1
+INFO - 2025-05-31 03:34:23 --> Kriteria C4 (Cost): bobot = [1,1,5,4,5], max = 5, min = 1
+INFO - 2025-05-31 03:34:23 --> Kriteria C5 (Benefit): bobot = [3,2,3,3,1], max = 3, min = 1
+INFO - 2025-05-31 03:34:23 --> Kriteria C6 (Benefit): bobot = [5,1,5,1,5], max = 5, min = 1
+INFO - 2025-05-31 03:34:23 --> Kriteria C7 (Benefit): bobot = [1,1,1,1,1], max = 1, min = 1
+INFO - 2025-05-31 03:34:23 --> Kriteria C8 (Benefit): bobot = [1,1,5,5,1], max = 5, min = 1
+INFO - 2025-05-31 03:34:23 --> Kriteria C9 (Benefit): bobot = [3,4,4,3,3], max = 4, min = 3
+INFO - 2025-05-31 03:34:23 --> Kriteria C10 (Benefit): bobot = [3,3,3,3,3], max = 3, min = 3
+INFO - 2025-05-31 03:34:23 --> === Memproses Kriteria C1 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:34:23 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A1][C1] = 1 / max(semua nilai di C1) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A2][C1] = 1 / max(semua nilai di C1) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A3][C1] = 5 / max(semua nilai di C1) = 5 / 5 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A4][C1] = 5 / max(semua nilai di C1) = 5 / 5 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A5][C1] = 1 / max(semua nilai di C1) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:34:23 --> === Selesai memproses Kriteria C1 ===
+INFO - 2025-05-31 03:34:23 --> === Memproses Kriteria C2 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:34:23 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A1][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A2][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A3][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A4][C2] = 1 / max(semua nilai di C2) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A5][C2] = 5 / max(semua nilai di C2) = 5 / 5 = 1
+INFO - 2025-05-31 03:34:23 --> === Selesai memproses Kriteria C2 ===
+INFO - 2025-05-31 03:34:23 --> === Memproses Kriteria C3 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:34:23 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A1][C3] = 2 / max(semua nilai di C3) = 2 / 5 = 0.4
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A2][C3] = 1 / max(semua nilai di C3) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A3][C3] = 4 / max(semua nilai di C3) = 4 / 5 = 0.8
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A4][C3] = 4 / max(semua nilai di C3) = 4 / 5 = 0.8
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A5][C3] = 5 / max(semua nilai di C3) = 5 / 5 = 1
+INFO - 2025-05-31 03:34:23 --> === Selesai memproses Kriteria C3 ===
+INFO - 2025-05-31 03:34:23 --> === Memproses Kriteria C4 (Jenis: Cost) ===
+INFO - 2025-05-31 03:34:23 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A1][C4] = min(semua nilai di C4) / 1 = 1 / 1 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A2][C4] = min(semua nilai di C4) / 1 = 1 / 1 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A3][C4] = min(semua nilai di C4) / 5 = 1 / 5 = 0.2
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A4][C4] = min(semua nilai di C4) / 4 = 1 / 4 = 0.25
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A5][C4] = min(semua nilai di C4) / 5 = 1 / 5 = 0.2
+INFO - 2025-05-31 03:34:23 --> === Selesai memproses Kriteria C4 ===
+INFO - 2025-05-31 03:34:23 --> === Memproses Kriteria C5 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:34:23 --> Max bobot: 3, Min bobot: 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A1][C5] = 3 / max(semua nilai di C5) = 3 / 3 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A2][C5] = 2 / max(semua nilai di C5) = 2 / 3 = 0.66666666666667
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A3][C5] = 3 / max(semua nilai di C5) = 3 / 3 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A4][C5] = 3 / max(semua nilai di C5) = 3 / 3 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A5][C5] = 1 / max(semua nilai di C5) = 1 / 3 = 0.33333333333333
+INFO - 2025-05-31 03:34:23 --> === Selesai memproses Kriteria C5 ===
+INFO - 2025-05-31 03:34:23 --> === Memproses Kriteria C6 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:34:23 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A1][C6] = 5 / max(semua nilai di C6) = 5 / 5 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A2][C6] = 1 / max(semua nilai di C6) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A3][C6] = 5 / max(semua nilai di C6) = 5 / 5 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A4][C6] = 1 / max(semua nilai di C6) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A5][C6] = 5 / max(semua nilai di C6) = 5 / 5 = 1
+INFO - 2025-05-31 03:34:23 --> === Selesai memproses Kriteria C6 ===
+INFO - 2025-05-31 03:34:23 --> === Memproses Kriteria C7 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:34:23 --> Max bobot: 1, Min bobot: 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A1][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A2][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A3][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A4][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A5][C7] = 1 / max(semua nilai di C7) = 1 / 1 = 1
+INFO - 2025-05-31 03:34:23 --> === Selesai memproses Kriteria C7 ===
+INFO - 2025-05-31 03:34:23 --> === Memproses Kriteria C8 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:34:23 --> Max bobot: 5, Min bobot: 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A1][C8] = 1 / max(semua nilai di C8) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A2][C8] = 1 / max(semua nilai di C8) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A3][C8] = 5 / max(semua nilai di C8) = 5 / 5 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A4][C8] = 5 / max(semua nilai di C8) = 5 / 5 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A5][C8] = 1 / max(semua nilai di C8) = 1 / 5 = 0.2
+INFO - 2025-05-31 03:34:23 --> === Selesai memproses Kriteria C8 ===
+INFO - 2025-05-31 03:34:23 --> === Memproses Kriteria C9 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:34:23 --> Max bobot: 4, Min bobot: 3
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A1][C9] = 3 / max(semua nilai di C9) = 3 / 4 = 0.75
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A2][C9] = 4 / max(semua nilai di C9) = 4 / 4 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A3][C9] = 4 / max(semua nilai di C9) = 4 / 4 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A4][C9] = 3 / max(semua nilai di C9) = 3 / 4 = 0.75
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A5][C9] = 3 / max(semua nilai di C9) = 3 / 4 = 0.75
+INFO - 2025-05-31 03:34:23 --> === Selesai memproses Kriteria C9 ===
+INFO - 2025-05-31 03:34:23 --> === Memproses Kriteria C10 (Jenis: Benefit) ===
+INFO - 2025-05-31 03:34:23 --> Max bobot: 3, Min bobot: 3
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A1][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A2][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A3][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A4][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:34:23 --> Normalisasi[A5][C10] = 3 / max(semua nilai di C10) = 3 / 3 = 1
+INFO - 2025-05-31 03:34:23 --> === Selesai memproses Kriteria C10 ===
+INFO - 2025-05-31 03:34:23 --> Hasil normalisasi: {"A1":{"C1":0.2,"C2":0.2,"C3":0.4,"C4":1,"C5":1,"C6":1,"C7":1,"C8":0.2,"C9":0.75,"C10":1},"A2":{"C1":0.2,"C2":0.2,"C3":0.2,"C4":1,"C5":0.67,"C6":0.2,"C7":1,"C8":0.2,"C9":1,"C10":1},"A3":{"C1":1,"C2":0.2,"C3":0.8,"C4":0.2,"C5":1,"C6":1,"C7":1,"C8":1,"C9":1,"C10":1},"A4":{"C1":1,"C2":0.2,"C3":0.8,"C4":0.25,"C5":1,"C6":0.2,"C7":1,"C8":1,"C9":0.75,"C10":1},"A5":{"C1":0.2,"C2":1,"C3":1,"C4":0.2,"C5":0.33,"C6":1,"C7":1,"C8":0.2,"C9":0.75,"C10":1}}

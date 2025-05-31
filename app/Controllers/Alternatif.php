@@ -90,6 +90,10 @@ class Alternatif extends BaseController
                 JOIN kriteria k ON an.kode_kriteria = k.kode_kriteria 
                 SET an.jenis_kriteria = k.jenis_kriteria 
                 WHERE an.kode_alternatif = ?", [$kodeAlternatif]);
+                $db->query("UPDATE alternatif_nilai an 
+                JOIN preferensi p ON an.kode_kriteria = p.kode_kriteria 
+                SET an.bobot_preferensi = p.bobot_preferensi 
+                WHERE an.kode_alternatif = ?", [$kodeAlternatif]);
 
                 return $this->response->setJSON([
                     'success' => true,
@@ -175,6 +179,11 @@ class Alternatif extends BaseController
                     JOIN kriteria k ON an.kode_kriteria = k.kode_kriteria 
                     SET an.jenis_kriteria = k.jenis_kriteria 
                     WHERE an.kode_alternatif = ?", [$kodeAlternatif]);
+                $db->query("UPDATE alternatif_nilai an 
+                JOIN preferensi p ON an.kode_kriteria = p.kode_kriteria 
+                SET an.bobot_preferensi = p.bobot_preferensi 
+                WHERE an.kode_alternatif = ?", [$kodeAlternatif]);
+
                 return $this->response->setJSON([
                     'success' => true,
                     'message' => 'Data alternatif berhasil diupdate'
