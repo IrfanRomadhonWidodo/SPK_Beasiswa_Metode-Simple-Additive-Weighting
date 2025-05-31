@@ -76,6 +76,19 @@ $routes->group('preferensi', function($routes) {
     $routes->get('getTotalBobot', 'Preferensi::getTotalBobot');
 });
 
+
+
+// Route untuk data perhitungan (menampilkan matriks + normalisasi)
+$routes->get('data_perhitungan', 'DataPerhitunganController::index');
+
+// Route untuk halaman matriks keputusan saja
+$routes->get('math/matrik_keputusan', 'DataPerhitunganController::matrikKeputusan');
+
+// Route untuk halaman normalisasi matriks
+$routes->get('math/normalisasi_matrik', 'DataPerhitunganController::normalisasi');
+
+
+
 // Route untuk Data Perhitungan (jika belum ada)
 // Route baru (gunakan controller)
 $routes->get('data_perhitungan', 'DataPerhitunganController::index');
