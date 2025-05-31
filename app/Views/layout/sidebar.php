@@ -71,7 +71,7 @@
                 <span class="text-sm">Data Perhitungan</span>
             </a>
             
-            <a href="#" class="flex items-center space-x-3 py-3 px-4 rounded-lg hover:bg-purple-600 hover:bg-opacity-30 transition-colors mb-1">
+            <a href="ranking" class="flex items-center space-x-3 py-3 px-4 rounded-lg hover:bg-purple-600 hover:bg-opacity-30 transition-colors mb-1">
                 <!-- Trending Up Icon -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />

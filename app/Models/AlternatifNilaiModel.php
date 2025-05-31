@@ -45,9 +45,10 @@ class AlternatifNilaiModel extends Model
 
     public function getNilaiByAlternatif($kodeAlternatif)
     {
-        return $this->select('alternatif_nilai.*, sub_kriteria.sub_variabel, sub_kriteria.bobot, kriteria.variabel')
+        return $this->select('alternatif_nilai.*, sub_kriteria.sub_variabel, sub_kriteria.bobot, kriteria.variabel,preferensi.bobot_preferensi')
                    ->join('sub_kriteria', 'sub_kriteria.id = alternatif_nilai.sub_kriteria_id')
                    ->join('kriteria', 'kriteria.kode_kriteria = alternatif_nilai.kode_kriteria')
+                   ->join('preferensi', 'preferensi.kode_kriteria = alternatif_nilai.kode_kriteria')
                    ->where('kode_alternatif', $kodeAlternatif)
                    ->findAll();
     }
@@ -65,10 +66,12 @@ class AlternatifNilaiModel extends Model
                 sub_kriteria.bobot, 
                 sub_kriteria.sub_variabel, 
                 kriteria.variabel, 
-                kriteria.jenis_kriteria
+                kriteria.jenis_kriteria,
+                preferensi.bobot_preferensi
             ')
         ->join('sub_kriteria', 'sub_kriteria.id = alternatif_nilai.sub_kriteria_id')
         ->join('kriteria', 'kriteria.kode_kriteria = alternatif_nilai.kode_kriteria')
+        ->join('preferensi', 'preferensi.kode_kriteria = alternatif_nilai.kode_kriteria')
         ->orderBy('alternatif_nilai.kode_alternatif, alternatif_nilai.kode_kriteria')
         ->findAll();
 }

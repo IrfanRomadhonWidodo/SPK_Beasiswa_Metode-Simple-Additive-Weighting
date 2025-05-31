@@ -1,3 +1,5 @@
+<!-- LANGKAH PERTAMA -->
+
 <div class="p-4 bg-white min-h-screen max-w-full overflow-hidden">
     <!-- Header Section -->
     <div class="mb-6">
@@ -174,6 +176,168 @@
         </div>
     </div>
 </div>
+
+
+<!-- LANGKAH KEDUA -->
+
+<?php if (isset($detailPerhitungan) && !empty($detailPerhitungan)): ?>
+<!-- Detail Perhitungan Section -->
+<div class="mt-6 mb-6">
+    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="px-4 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white">
+            <h3 class="text-lg font-semibold flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                </svg>
+                Detail Perhitungan Normalisasi
+            </h3>
+            <p class="text-emerald-100 text-sm mt-1">Langkah-langkah perhitungan normalisasi untuk setiap kriteria</p>
+        </div>
+
+        <!-- Detail per Kriteria -->
+        <div class="p-4 space-y-6">
+            <?php foreach ($detailPerhitungan as $kodeKriteria => $detail): ?>
+            <?php 
+                $isBenefit = strtolower($detail['jenis']) === 'benefit';
+                $colorClass = $isBenefit ? 'green' : 'red';
+                $jenisLabel = strtoupper($detail['jenis']);
+            ?>
+            
+            <!-- Kriteria Individual -->
+            <div class="border border-gray-200 rounded-lg overflow-hidden">
+                <div class="bg-<?= $colorClass ?>-50 px-4 py-3 border-b border-<?= $colorClass ?>-200">
+                    <div class="flex items-center justify-between">
+                        <h4 class="text-base font-semibold text-<?= $colorClass ?>-800 flex items-center">
+                            <span class="bg-<?= $colorClass ?>-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold mr-2">
+                                <?= esc($kodeKriteria) ?>
+                            </span>
+                            <?= esc($kriteriaList[$kodeKriteria]) ?> (<?= $jenisLabel ?>)
+                        </h4>
+                        <span class="bg-<?= $colorClass ?>-100 text-<?= $colorClass ?>-700 px-2 py-1 rounded text-xs font-medium">
+                            <?= $jenisLabel ?>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="p-4">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                        <!-- Formula -->
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-3">
+                            <h5 class="text-sm font-semibold text-blue-800 mb-2">Formula yang Digunakan:</h5>
+                            <div class="bg-white p-2 rounded border text-center">
+                                <?php if ($isBenefit): ?>
+                                    <code class="text-blue-700 font-mono">r<sub>ij</sub> = x<sub>ij</sub> / max(x<sub>ij</sub>)</code>
+                                <?php else: ?>
+                                    <code class="text-blue-700 font-mono">r<sub>ij</sub> = min(x<sub>ij</sub>) / x<sub>ij</sub></code>
+                                <?php endif; ?>
+                            </div>
+                            <div class="mt-2 text-xs text-blue-600">
+                                <?php if ($isBenefit): ?>
+                                    <p><strong>Max Nilai <?= esc($kodeKriteria) ?>:</strong> <?= number_format($detail['max_bobot'], 2) ?>
+                                    <?php 
+                                        // Cari alternatif dengan nilai maksimum
+                                        $maxAlternatif = array_search($detail['max_bobot'], $detail['bobot_asli']);
+                                    ?>
+                                    <?php if ($maxAlternatif): ?>
+                                        (<?= esc($maxAlternatif) ?>)
+                                    <?php endif; ?>
+                                    </p>
+                                <?php else: ?>
+                                    <p><strong>Min Nilai <?= esc($kodeKriteria) ?>:</strong> <?= number_format($detail['min_bobot'], 2) ?>
+                                    <?php 
+                                        // Cari alternatif dengan nilai minimum (yang > 0)
+                                        $bobotNonZero = array_filter($detail['bobot_asli'], function($val) { return $val > 0; });
+                                        if (!empty($bobotNonZero)) {
+                                            $minAlternatif = array_search(min($bobotNonZero), $detail['bobot_asli']);
+                                        }
+                                    ?>
+                                    <?php if (isset($minAlternatif) && $minAlternatif): ?>
+                                        (<?= esc($minAlternatif) ?>)
+                                    <?php endif; ?>
+                                    </p>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+
+                        <!-- Perhitungan -->
+                        <div class="bg-gray-50 border border-gray-200 rounded-lg p-3">
+                            <h5 class="text-sm font-semibold text-gray-800 mb-2">Perhitungan Detail:</h5>
+                            <div class="space-y-1 text-xs text-gray-700">
+                                <?php foreach ($detail['bobot_asli'] as $alternatif => $bobotAsli): ?>
+                                <?php 
+                                    if ($isBenefit) {
+                                        $nilaiNormalisasi = $detail['max_bobot'] > 0 ? $bobotAsli / $detail['max_bobot'] : 0;
+                                        $formula = number_format($bobotAsli, 2) . ' / ' . number_format($detail['max_bobot'], 2);
+                                    } else {
+                                        if ($bobotAsli == 0) {
+                                            $nilaiNormalisasi = 1;
+                                            $formula = '1 (nilai 0)';
+                                        } else {
+                                            $nilaiNormalisasi = $detail['min_bobot'] / $bobotAsli;
+                                            $formula = number_format($detail['min_bobot'], 2) . ' / ' . number_format($bobotAsli, 2);
+                                        }
+                                    }
+                                    
+                                    // Highlight nilai terbaik
+                                    $isOptimal = false;
+                                    if ($isBenefit && $bobotAsli == $detail['max_bobot']) {
+                                        $isOptimal = true;
+                                    } elseif (!$isBenefit && ($bobotAsli == 0 || $bobotAsli == $detail['min_bobot'])) {
+                                        $isOptimal = true;
+                                    }
+                                ?>
+                                <div class="flex justify-between <?= $isOptimal ? 'bg-' . $colorClass . '-100 px-2 py-1 rounded' : '' ?>">
+                                    <span><?= esc($alternatif) ?>: <?= $formula ?> =</span>
+                                    <span class="font-semibold <?= $isOptimal ? 'text-' . $colorClass . '-700' : '' ?>">
+                                        <?= number_format($nilaiNormalisasi, 2) ?>
+                                    </span>
+                                </div>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Keterangan Khusus untuk Cost -->
+                    <?php if (!$isBenefit): ?>
+                    <div class="mt-3 bg-yellow-50 border border-yellow-200 rounded-lg p-3">
+                        <div class="flex items-start">
+                            <svg class="h-4 w-4 text-yellow-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div class="text-xs text-yellow-800">
+                                <strong>Catatan Cost:</strong> Semakin kecil nilai asli, semakin baik (mendapat nilai normalisasi tinggi). Nilai 0 dianggap optimal dan mendapat normalisasi 1.
+                            </div>
+                        </div>
+                    </div>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
+
+        <!-- Summary -->
+        <div class="px-4 pb-4">
+            <div class="bg-emerald-50 border border-emerald-200 rounded-lg p-3">
+                <div class="flex items-start">
+                    <svg class="h-4 w-4 text-emerald-500 mt-0.5 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div class="text-sm text-emerald-800">
+                        <strong>Ringkasan:</strong> Setiap kriteria dinormalisasi menggunakan formula yang sesuai dengan jenisnya. 
+                        Kriteria <strong>Benefit</strong> menggunakan pembagian dengan nilai maksimum, sedangkan kriteria <strong>Cost</strong> 
+                        menggunakan pembagian nilai minimum dengan nilai aktual. Hasil normalisasi berkisar antara 0-1.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php endif; ?>
+
+
+
+
+<!-- LANGKAH KETIGA -->
 
 <?php if (isset($showNormalisasi) && $showNormalisasi): ?>
 <!-- Normalization Section -->

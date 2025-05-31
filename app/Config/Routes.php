@@ -76,7 +76,10 @@ $routes->group('preferensi', function($routes) {
     $routes->get('getTotalBobot', 'Preferensi::getTotalBobot');
 });
 
-
+$routes->group('ranking', function($routes) {
+    $routes->get('/', 'PerangkinganController::index');
+    $routes->get('data', 'PerangkinganController::getDataJSON');
+});
 
 // Route untuk data perhitungan (menampilkan matriks + normalisasi)
 $routes->get('data_perhitungan', 'DataPerhitunganController::index');
