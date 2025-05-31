@@ -72,7 +72,6 @@
     
     <?= view('math/matrik_keputusan') ?>
 
-    <?= view('math/normalisasi_matrik') ?>
 
 
 

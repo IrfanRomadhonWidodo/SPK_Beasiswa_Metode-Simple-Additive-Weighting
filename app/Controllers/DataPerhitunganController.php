@@ -31,14 +31,12 @@ class DataPerhitunganController extends BaseController
         // Ambil data matriks dari MatrikKeputusanController
         $matrikController = new MatrikKeputusanController();
         $matriksData = $matrikController->getMatrikKeputusan();
-        $matriksData['hasData'] = !empty($matriksData['matrikData']);
 
         // Gabungkan data untuk dikirim ke view
         $data = [
             'title' => 'Data Perhitungan',
             'user' => $user,
-            'content' => view('math/matrik_keputusan', $matriksData),
-            'content2' => view('math/normalisasi_matrik', $matriksData),
+            'content' => view('math/matrik_keputusan', $matriksData)
         ];
 
         return view('data_perhitungan', $data);

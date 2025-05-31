@@ -76,23 +76,6 @@ $routes->group('preferensi', function($routes) {
     $routes->get('getTotalBobot', 'Preferensi::getTotalBobot');
 });
 
-
-// Tambahkan route ini ke dalam file app/Config/Routes.php
-
-// Route untuk Matriks Keputusan
-$routes->get('matrik-keputusan', 'MatrikKeputusanController::index');
-$routes->get('matrik-keputusan/data', 'MatrikKeputusanController::getMatrikData');
-$routes->get('matrik-keputusan/json', 'MatrikKeputusanController::getMatrikData');
-
-
-$routes->group('math', function($routes) {
-    // Normalisasi Matrik Routes
-    $routes->get('normalisasi_matrik', 'NormalisasiController::index');
-    $routes->post('normalisasi_matrik/proses', 'NormalisasiController::prosesNormalisasi');
-    $routes->post('normalisasi_matrik/reset', 'NormalisasiController::resetData');
-    $routes->get('normalisasi_matrik/data', 'NormalisasiController::getMatrikData');
-});
-
 // Route untuk Data Perhitungan (jika belum ada)
 // Route baru (gunakan controller)
 $routes->get('data_perhitungan', 'DataPerhitunganController::index');
