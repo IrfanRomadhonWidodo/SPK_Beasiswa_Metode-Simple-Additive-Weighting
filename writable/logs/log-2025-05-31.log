@@ -17398,3 +17398,4 @@ INFO - 2025-05-31 14:22:02 --> Alternatif A5, Kriteria C10: (1 × 0.5) = 0.5
 INFO - 2025-05-31 14:22:02 --> Alternatif A5: Vi = (0.2) × (1.5) + (1) × (1) + (1) × (1.5) + (0.2) × (1.5) + (0.33) × (1) + (1) × (1) + (1) × (1) + (0.2) × (0.5) + (0.75) × (0.5) + (1) × (0.5) = 6.405
 INFO - 2025-05-31 14:22:02 --> Hasil Perangkingan Final: [{"rank":1,"alternatif":"A3","nilai_preferensi":7.7},{"rank":2,"alternatif":"A4","nilai_preferensi":6.85},{"rank":3,"alternatif":"A1","nilai_preferensi":6.575},{"rank":4,"alternatif":"A5","nilai_preferensi":6.405},{"rank":5,"alternatif":"A2","nilai_preferensi":5.27}]
 DEBUG - 2025-05-31 14:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-31 14:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

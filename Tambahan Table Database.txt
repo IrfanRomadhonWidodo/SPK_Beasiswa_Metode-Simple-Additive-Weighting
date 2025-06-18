@@ -1,0 +1,72 @@
+//UNTUK USER
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    full_name VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    is_active TINYINT(1) DEFAULT 1
+);
+
+
+//NILAI ALTERNATIF
+
+ALTER TABLE `alternatif`
+ADD INDEX (`kode_alternatif`);
+
+ALTER TABLE alternatif_nilai 
+ADD COLUMN jenis_kriteria ENUM('Cost', 'Benefit') 
+CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci 
+DEFAULT NULL;
+
+ALTER TABLE alternatif_nilai
+ADD COLUMN bobot_preferensi DECIMAL(5,2) DEFAULT NULL;
+
+
+CREATE TABLE `alternatif_nilai` (
+  `id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `kode_alternatif` VARCHAR(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `kode_kriteria` VARCHAR(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `sub_kriteria_id` INT(11) UNSIGNED NOT NULL,
+  `created_at` DATETIME DEFAULT NULL,
+  `updated_at` DATETIME DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`kode_alternatif`) REFERENCES `alternatif`(`kode_alternatif`) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (`kode_kriteria`) REFERENCES `kriteria`(`kode_kriteria`) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (`sub_kriteria_id`) REFERENCES `sub_kriteria`(`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+
+ALTER TABLE alternatif_nilai ADD COLUMN bobot INT NOT NULL DEFAULT 0;
+
+
+UPDATE alternatif_nilai an
+JOIN sub_kriteria sk ON an.sub_kriteria_id = sk.id
+SET an.bobot = sk.bobot;
+
+
+SELECT an.*, sk.bobot
+FROM alternatif_nilai an
+JOIN sub_kriteria sk ON an.sub_kriteria_id = sk.id;
+
+
+
+//PREFERENSI
+
+ALTER TABLE `kriteria` ADD INDEX (`kode_kriteria`);
+CREATE TABLE preferensi (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    kode_kriteria VARCHAR(10) COLLATE utf8mb4_general_ci NOT NULL,
+    bobot_preferensi DECIMAL(5,2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (id),
+    FOREIGN KEY (kode_kriteria) REFERENCES kriteria(kode_kriteria) 
+        ON DELETE CASCADE 
+        ON UPDATE CASCADE,
+    UNIQUE KEY unique_kode_kriteria (kode_kriteria)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
